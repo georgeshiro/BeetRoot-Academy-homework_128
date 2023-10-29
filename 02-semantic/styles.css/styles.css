@@ -1,0 +1,27 @@
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+}
+
+summary {
+  display: inline-block;
+  cursor: pointer;
+}
+
+details[open] .dropdown-content {
+  display: block;
+}
+
+summary::after {
+  content: "\25BC";
+  display: inline-block;
+  margin-left: 10px;
+}
+.resume-icon::before {
+  content: "\1F4D6"; /* Код символу для вашого значка */
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 60px;
+}
