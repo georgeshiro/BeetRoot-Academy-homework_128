@@ -5,37 +5,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width-divice-width, initial-scale=1.0">
     <title>Домашка 04</title>
+    <style>
+    .container {
+        width: max(90%, 970px);
+        /*width: 970px;
+        max-width: 970px;*/
+        margin: 0 auto;
+    }
+    .footer_content {
+        width: 350px;
+        margin: 0 auto;
+
+    }
+    </style>
 </head>
 
 <body>
     <header>
+        <div class="container">
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about_me">About me</a></li>
-                <li><a href="skills">Skills</a></li>
+                <li><a href="#skills">Skills </a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contacts">Contacts</a></li>
             </ul>
         </nav>
+        </div>
     </header>
     <main>
-        <section id="home" class="home-section">
-        <h1>Denis Novik</h1>
+        <section class="home-section">
+            <div class="container">
+        <h1 id="home">Denis Novik</h1>
         <img src="assets/image/denis.jpg" alt="Фото Дениса">
+            </div>
         </section>
         <section>
-        <h2 id="about_me">About me</h2>
-            <p>Hi, I'm Denis – UX/UI designer from Minsk.
-                I'm interested in design and everything connected with it.</p>
-            <p>I'm studying at courses "Web and mobile design
-                interfaces" in IT-Academy.</p>
-            <p>Ready to implement excellent projects
-                with wonderful people.</p>
-        </section>
-        <section id="skills" class="skills-section">
             <div class="container">
-            <h2>Skills</h2>
+        <h2 id="about_me">About me</h2>
+            <div>Hi, I'm Denis – UX/UI designer from Minsk.
+                I'm interested in design and everything connected with it.</div>
+            <div>I'm studying at courses "Web and mobile design
+                interfaces" in IT-Academy.</div>
+            <div>Ready to implement excellent projects
+                with wonderful people.</div>
+            </div>
+        </section>
+        <section class="skills-section">
+            <div class="container">
+            <h2 id="skills">Skills</h2>
             <div class="skills-text">I work in such programs as</div>
             <div class="skills-item">
                 <img src="assets/image/Ps.jpg" alt="Фотошоп">
@@ -50,7 +69,7 @@
                 </div>
             <div>
                 <img src="assets/image/Ai.jpg" alt="Adobe Illustrator">
-                <div>Adobe Illustrator</div>
+                <div class="skills-title">Adobe Illustrator</div>
                 <img src="assets/image/star-icon.jpg" alt="Star">
                 <img src="assets/image/star-icon.jpg" alt="Star">
                 <img src="assets/image/star-icon.jpg" alt="Star">
@@ -59,7 +78,7 @@
             </div>
             <div>
                 <img src="assets/image/Ae.jpg" alt="Adobe After Effects">
-                <div>Adobe After Effects</div>
+                <div class="skills-title">Adobe After Effects</div>
                 <img src="assets/image/star-icon.jpg" alt="Star">
                 <img src="assets/image/star-icon.jpg" alt="Star">
                 <img src="assets/image/star-icon.jpg" alt="Star">
@@ -68,16 +87,17 @@
             </div>
             <div>
                 <img src="assets/image/Figma.jpg" alt="Figma">
-                <div>Figma</div>
+                <div class="skills-title">Figma</div>
                 <img src="assets/image/star-icon.jpg" alt="Star">
                 <img src="assets/image/star-icon.jpg" alt="Star">
                 <img src="assets/image/star-icon.jpg" alt="Star">
                 <img src="assets/image/star-icon.jpg" alt="Star">
                 <img src="assets/image/star-icon.jpg" alt="Star">
             </div>
-        </section>
-
+            </div>
+          </section>
         <section>
+            <div class="container">
             <h2 id="portfolio">Portfolio</h2>
             <img src="assets/image/Fashion-Store.jpg" alt="Жінка на облошці журналу">
             <div><a href="#">Online fashion store - Homepage</a></div>
@@ -87,20 +107,25 @@
 
             <img src="assets/image/kamera.jpg" alt="Стара фото камера">
             <div><a href="#">Braun Landing Page - Concept</a></div>
+            </div>
         </section>
     </main>
     <footer>
+        <div class="footer_content">
         <h2 id="contacts">Contacts</h2>
         <p>Want to know more or just chat?
             You are welcome!</p>
         <button type="button">Sand massage</button>
         <div>
-            <img src="assets/image/In.jpg" alt="Значок LinkedIn">
-            <img src="assets/image/instagram.jpg" alt="Значок Instagram">
-            <img src="assets/image/behance.jpg" alt="значок Behance">
-            <img src="assets/image/dribbble.jpg" alt="Значок Dribble">
-            <p>Like me on
-                LinkedIn, Instagram, Behance, Dribble</p>
+             <ul>
+            <li><a href="#" target="_blank" rel="noreferrer"><img src="assets/image/In.jpg" alt="Значок LinkedIn"></a></li>
+            <li><a href="#" target="_blank" rel="noreferrer"><img src="assets/image/instagram.jpg" alt="Значок Instagram"></a></li>
+            <li><a href="#" target="_blank" rel="noreferrer"><img src="assets/image/behance.jpg" alt="значок Behance"></a></li>
+            <li><a href="#" target="_blank" rel="noreferrer"><img src="assets/image/dribbble.jpg" alt="Значок Dribble"></a></li>
+            <div>Like me on
+                LinkedIn, Instagram, Behance, Dribble</div>
+             </ul>
+        </div>
         </div>
 
 
