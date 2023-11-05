@@ -1,32 +1,18 @@
 <!DOCTYPE html>
-<html lang="uk">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width-divice-width, initial-scale=1.0">
-    <title>Домашка 04</title>
-    <style>
-    .container {
-        width: min(90%, 970px);
-        /*width: 970px;
-        max-width: 970px;*/
-        margin: 0 auto;
-    }
-    .footer_content {
-        width: 350px;
-        margin: 0 auto;
-
-    }
-    img {
-        width: 100%;
-    }
-    </style>
-</head>
-
+    <title>Denis Novik</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    </head>
 <body>
-    <header>
-        <div class="container">
-        <nav>
+    <header class="header">
+        <div class="container-bordered">
+        <nav class="main-nav">
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about_me">About me</a></li>
@@ -38,103 +24,124 @@
         </div>
     </header>
     <main>
-        <section class="home-section">
+        <section class="Denis-section" id="home">
             <div class="container">
-        <h1 id="home">Denis Novik</h1>
-        <img src="assets/image/denis.jpg" alt="Фото Дениса">
+            <h1 class="Denis-novik">Denis Novik</h1>
+            <div class="denis-foto"><img src="assets/image/denis.jpg" alt="Фото Дениса"></div>
             </div>
         </section>
-        <section>
+        <section class="about-me-section" id="about_me">
             <div class="container">
-        <h2 id="about_me">About me</h2>
-            <div>Hi, I'm Denis – UX/UI designer from Minsk.
-                I'm interested in design and everything connected with it.</div>
-            <div>I'm studying at courses "Web and mobile design
-                interfaces" in IT-Academy.</div>
-            <div>Ready to implement excellent projects
-                with wonderful people.</div>
+            <h2 class="about_me" >About me</h2>
+            <div class="about-me-text1">Hi, I'm Denis – UX/UI designer from Minsk.<br>I'm interested in design and everything connected with it.</div>
+            <div class="about-me-text2">I'm studying at courses "Web and mobile design<br>interfaces" in IT-Academy.</div>
+            <div class="about-me-text3">Ready to implement excellent projects<br>with wonderful people.</div>
             </div>
         </section>
-        <section class="skills-section">
+        <section class="skills-section" id="skills">
             <div class="container">
-            <h2 id="skills">Skills</h2>
-            <div class="skills-text">I work in such programs as</div>
-            <div class="skills-item">
-                <img src="assets/image/Ps.jpg" alt="Фотошоп">
-                <div class="skills-title">Adobe Fotoshop</div>
-                <div class="skills-raiting">
-                <span class="dark-star"><img src="assets/image/star-icon.jpg" alt="Star"></span>
-                <span class="dark-star"><img src="assets/image/star-icon.jpg" alt="Star"></span>
-                <span class="white-star"><img src="assets/image/star-icon2.jpg" alt="Star"></span>
-                <span class="white-star"><img src="assets/image/star-icon2.jpg" alt="Star"></span>
-                <span class="white-star"><img src="assets/image/star-icon2.jpg" alt="Star"></span>
-            </div>
-                </div>
-            <div>
-               <div> <img src="assets/image/Ai.jpg" alt="Adobe Illustrator">
-                <div class="skills-title">Adobe Illustrator</div>
-                <img src="assets/image/star-icon.jpg" alt="Star">
-                <img src="assets/image/star-icon.jpg" alt="Star">
-                <img src="assets/image/star-icon.jpg" alt="Star">
-                <img src="assets/image/star-icon2.jpg" alt="Star">
-                <img src="assets/image/star-icon2.jpg" alt="Star">
-            </div>
-            <div>
-                <img src="assets/image/Ae.jpg" alt="Adobe After Effects">
-                <div class="skills-title">Adobe After Effects</div>
-                <img src="assets/image/star-icon.jpg" alt="Star">
-                <img src="assets/image/star-icon.jpg" alt="Star">
-                <img src="assets/image/star-icon.jpg" alt="Star">
-                <img src="assets/image/star-icon.jpg" alt="Star">
-                <img src="assets/image/star-icon2.jpg" alt="Star">
-            </div>
-            <div>
-                <img src="assets/image/Figma.jpg" alt="Figma">
-                <div class="skills-title">Figma</div>
-                <img src="assets/image/star-icon.jpg" alt="Star">
-                <img src="assets/image/star-icon.jpg" alt="Star">
-                <img src="assets/image/star-icon.jpg" alt="Star">
-                <img src="assets/image/star-icon.jpg" alt="Star">
-                <img src="assets/image/star-icon.jpg" alt="Star">
-            </div>
+                <h2 class="skills">Skills</h2>  
+                        <div class="subtitle-skills">I work in such programs as</div>
+                            <ul class="skills-list">
+                                <li>
+                                <div class="skill-item">
+                                <div class="skill-logo">
+                                    <img src="assets/image/Ps.jpg" alt="Фотошоп">
+                                </div>
+                                <div class="skill-title">
+                                    Adobe Fotoshop
+                                </div>
+                                   <div class="skill-rating">
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="star gray"></span>
+                                    <span class="star gray"></span>
+                                    <span class="star gray"></span>
+                                   </div> 
+                                </div>
+                                </li>
+                                <li>
+                                    <div class="skill-item">
+                                    <div class="skill-logo">
+                                        <img src="assets/image/Ai.jpg" alt="Adobe Illustrator">
+                                    </div>
+                                    <div class="skill-title">
+                                        Adobe Illustrator
+                                    </div>
+                                       <div class="skill-rating">
+                                        <span class="star"></span>
+                                        <span class="star"></span>
+                                        <span class="star"></span>
+                                        <span class="star gray"></span>
+                                        <span class="star gray"></span>
+                                       </div> 
+                                    </div>
+                                    </li>
+                                    <li>
+                                        <div class="skill-item">
+                                        <div class="skill-logo">
+                                            <img src="assets/image/Ae.jpg" alt="Adobe After Effects">
+                                        </div>
+                                        <div class="skill-title">
+                                            Adobe After Effects
+                                        </div>
+                                           <div class="skill-rating">
+                                            <span class="star"></span>
+                                            <span class="star"></span>
+                                            <span class="star"></span>
+                                            <span class="star"></span>
+                                            <span class="star gray"></span>
+                                           </div> 
+                                        </div>
+                                        </li>
+                                        <li class="last">
+                                            <div class="skill-item">
+                                            <div class="skill-logo">
+                                                <img src="assets/image/Figma.jpg" alt="Figma">
+                                            </div>
+                                            <div class="skill-title">
+                                                Figma
+                                            </div>
+                                               <div class="skill-rating">
+                                                <span class="star"></span>
+                                                <span class="star"></span>
+                                                <span class="star"></span>
+                                                <span class="star"></span>
+                                                <span class="star"></span>
+                                               </div> 
+                                            </div>
+                                            </li>
+                            </ul>
             </div>
           </section>
-        <section>
+        <section class="portfolio-section" id="portfolio">
             <div class="container">
-            <h2 id="portfolio">Portfolio</h2>
-            <img src="assets/image/Fashion-Store.jpg" alt="Жінка на облошці журналу">
-            <div><a href="#">Online fashion store - Homepage</a></div>
-
-            <img src="assets/image/reebok_web.jpg" alt="Чоловік стрибає в кросівках Рібок">
-            <div><a href="#">Reebok Store - Concept</a></div>
-
-            <img src="assets/image/kamera.jpg" alt="Стара фото камера">
-            <div><a href="#">Braun Landing Page - Concept</a></div>
+                <h2 class="title">Portfolio</h2>
+                <div class="img-Portfolio"><img src="assets/image/Fashion-Store.jpg" alt="Жінка на облошці журналу"></div>
+                <div class="href-fashion"><a href="#">Online fashion store -<br>Homepage</a></div>
+                <div class="img-Portfolio"><img src="assets/image/reebok_web.jpg" alt="Чоловік стрибає в кросівках Рібок"></div> 
+                <div class="Reebok-Store-tex"><a href="#">Reebok Store - Concept</a></div>
+                <div class="img-Portfolio"><img src="assets/image/kamera.jpg" alt="Стара фото камера"></div>
+                <div class="Braun-Landing-text"><a href="#">Braun Landing Page - Concept</a></div>
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="footer" id="contacts">
         <div class="footer_content">
-        <h2 id="contacts">Contacts</h2>
-        <p>Want to know more or just chat?
-            You are welcome!</p>
-        <button type="button">Sand massage</button>
-        <div>
+        <h2 class="Contacts">Contacts</h2>
+        <div class="footer-text">Want to know more or just chat?<br>You are welcome!</div>
+        <button class="button" type="button">Sand massage</button>
+        <div class="contacts-link">
              <ul>
-            <li><a href="#" target="_blank" rel="noreferrer"><img src="assets/image/In.jpg" alt="Значок LinkedIn"></a></li>
-            <li><a href="#" target="_blank" rel="noreferrer"><img src="assets/image/instagram.jpg" alt="Значок Instagram"></a></li>
-            <li><a href="#" target="_blank" rel="noreferrer"><img src="assets/image/behance.jpg" alt="значок Behance"></a></li>
-            <li><a href="#" target="_blank" rel="noreferrer"><img src="assets/image/dribbble.jpg" alt="Значок Dribble"></a></li>
-            <div>Like me on
+                <li><a href="#" target="_blank" rel="noreferrer"><img src="assets/image/In.jpg" alt="Значок LinkedIn"></a></li>
+                <li><a href="#" target="_blank" rel="noreferrer"><img src="assets/image/instagram.jpg" alt="Значок Instagram"></a></li>
+                <li><a href="#" target="_blank" rel="noreferrer"><img src="assets/image/behance.jpg" alt="значок Behance"></a></li>
+                <li><a href="#" target="_blank" rel="noreferrer"><img src="assets/image/dribbble.jpg" alt="Значок Dribble"></a></li>
+            <div class="footer-end">Like me on
                 LinkedIn, Instagram, Behance, Dribble</div>
              </ul>
         </div>
         </div>
-
-
     </footer>
-
-
 </body>
-
 </html>

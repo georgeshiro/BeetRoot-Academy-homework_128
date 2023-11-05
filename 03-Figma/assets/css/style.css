@@ -1,0 +1,213 @@
+/*===Navigation====================================*/
+.main-nav {
+    padding-top: 29px;
+    padding-bottom: 29px;
+    border-bottom: 1px solid gray;
+}
+.main-nav ul {
+     text-align: center;
+    font-size: 0;
+}
+.main-nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 18px;
+}
+.main-nav ul li a {
+color: #808080;
+}
+/*===Denis Novik=======================================*/
+.Denis-novik { 
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 12px;
+    max-width: 323px;
+}
+/*===About me=========================================*/
+.about-me-section {
+    text-align: center;
+    background: var(--bg-gray, #F6F6F6);
+}
+.about_me {
+    font-size: 34px;
+    font-weight: 700;
+    margin-top: 0;
+    padding-top: 100px;
+    margin-bottom: 50px;
+}
+.about-me-text1 {
+     margin-bottom: 30px;
+}
+.about-me-text2 {
+    margin-bottom: 30px;
+}
+.about-me-text3 {
+    padding-bottom: 100px; 
+}
+/*===BODY================================================*/
+.body { 
+    font-family: 'Open Sans', sans-serif;
+    color: var(--Black, #070707);
+    font-size: 18px;
+}
+.container {
+    width: min(90%, 970px);
+    margin: 0 auto;
+}
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    vertical-align: top;
+}
+li {
+    list-style: none;
+}
+/*===Skills==============================================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.skills-section {
+    padding-top: 100px;
+    padding-bottom: 101px;
+}
+.skills /*h2*/ {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 34px;
+    line-height: 34px;
+}
+.subtitle-skills {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.skills-list {
+   font-size: 0;
+}
+.skills-list li {
+    display: inline-block;
+    margin-right: 96.5px;
+    width: 170px;
+    font-size: 14px;
+    /*vertical-align: top; */
+}
+.skills-list li.last {
+   margin-right: 0;
+}
+.skills-logo {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 25px;
+    aspect-ratio: 1;
+}
+.skill-title {
+    text-align: center;
+    color: #828282;
+    font-weight: 700;
+    letter-spacing: 0.28px;
+    margin-bottom: 60px;
+    padding: 0 36px;
+}
+.skills-list li.last .skill-title {
+    margin-bottom: 80px;
+ }
+ .skills-rating {
+    font-size: 0;
+ }
+ .star {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    /*margin-right: 10px;*/
+    background: url('../image/star-icon.jpg') 50% 50%/26px auto no-repeat;
+ }
+ .skills-rating .star + .star {
+    margin-left: 10px;
+ }
+ .star.gray {
+    opacity: .2;
+ }
+/*===Portfolio============================================*/
+.portfolio-section {
+    background: var(--bg-gray, #F6F6F6); 
+    text-align: center;
+}
+.title {
+    font-size: 34px;
+    font-weight: 700;
+    padding-top: 100px;
+    margin-bottom: 50px;
+}
+.href-fashion {
+    margin-top: 40px;
+   padding-bottom: 70px;
+}
+
+.href-fashion a { 
+    color: var(--Black, #070707);
+    text-decoration-line: underline;
+}
+.Reebok-Store-tex {
+    text-decoration-line: underline;
+    margin-top: 40px;
+    padding-bottom: 70px;
+}
+.Reebok-Store-tex a {
+    color: var(--Black, #070707);
+}
+.Braun-Landing-text {
+    text-decoration-line: underline;
+    margin-top: 40px;
+    padding-bottom: 100px;
+}
+.Braun-Landing-text a {
+    color: var(--Black, #070707);
+}
+/*===Contacts=======================================*/
+.footer {
+    text-align: center;
+}
+.footer ul {
+list-style: none;
+}
+.Contacts {
+    padding-top: 100px;
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+.footer-text {
+    margin-bottom: 60px;
+}
+button {
+    display: inline-block;
+    border: 1px solid #000;
+    min-width: 180px;
+    text-align: center;
+    padding: 10px 16px;
+    border-radius: 22px;
+    color: #fff;
+    background-color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+button:hover {
+ background-color: #fff;
+ color: #000;
+}
+.contacts-link ul li {
+    display: inline-block;
+    margin-right: 50px;
+    padding-bottom: 60px;
+}
+.footer-end {
+    color: #828282;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+}
