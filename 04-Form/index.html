@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Form</title>
+</head>
+<body>
+<main>
+    <h1>Forms</h1>
+            <div class="container">
+                <form action="#" method="post">
+                        <div class="form-name">
+                            <label for="name">Повне ім&apos;я</label>
+                            <input type="text" id="name" name="name" required> 
+                        </div>
+                        <div class="form-name">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-name">
+                            <label for="password">Пароль</label>
+                            <input type="password" id="password" name="password" required>  
+                        </div>
+                        <div class="form-name">
+                            <label for="password-again">Пароль ще раз</label>
+                            <input type="password" id="password-again" name="password-again" required> 
+                        </div>
+                        <div>
+                            <span>Стать</span>
+                            <input type="radio" id="male" name="gender" value="male" checked>
+                            <label for="male">чоловіча</label>
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">жіноча</label>
+                        </div>
+                        <div class="form-name">
+                            <label for="age">Вік</label>
+                            <input type="number" id="age" name="age" min="14" max="200" step="1" value="18">
+                        </div>               
+                        <div class="form-name">
+                            <label for="course">Курс</label>
+                            <select name="course" id="course">
+                                <option value="">-=Виберіть курс=-</option>
+                                <option value="front-end">Front-end</option>
+                                <option value="back-end">Back-End</option>
+                                <option value="project-management">Project Management</option>
+                                <option value="qa-manual">QA manual</option>
+                            </select>
+                        </div>
+                        <div class="form-name">
+                            <label for="address"> Повна адреса</label>
+                            <textarea name="address" id="address" placeholder="Країна, регіон, місто/селище, вулиця"></textarea>
+                        </div>
+                        <div>
+                            <label class="agree-btn">
+                            <input type="checkbox" name="checkbox"> Я погоджуюсь з обробкою персональних даних
+                            </label>
+                        </div>
+                        <div class="form-name btn">
+                            <button type="reset">Очистити форму</button> 
+                            <button type="submit">Зареєструватися</button>
+                        </div>
+                    </form>
+                </div> 
+</main>
+</body>
+</html>

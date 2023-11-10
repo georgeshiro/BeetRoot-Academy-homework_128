@@ -1,27 +1,37 @@
-.dropdown-content {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  display: none;
+body {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  color: #000000;
+  font-size: 18px;
+  background-color: #f9f9f9;
+  width: min(90%, 970px);
+  margin: auto;
 }
-
-summary {
-  display: inline-block;
-  cursor: pointer;
+.screen {
+  height: 100vh;
+  background-image: url(../assets/images/BG.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-
-details[open] .dropdown-content {
-  display: block;
+.CV {
+  padding: 10px;
+  border-radius: 100px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.8);
 }
-
-summary::after {
-  content: "\25BC";
-  display: inline-block;
-  margin-left: 10px;
+ul li {
+  list-style: none;
 }
-.resume-icon::before {
-  content: "\1F4D6"; /* Код символу для вашого значка */
-  display: inline-block;
-  margin-right: 10px;
-  font-size: 60px;
+#contact, #Experience, #education {
+  border-color: #000000;
+  padding: 10px;
+  border-radius: 60px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.623);
+  margin: 0 100px;
+}
+img {
+  max-width: 100%;
+  height: auto;
 }
