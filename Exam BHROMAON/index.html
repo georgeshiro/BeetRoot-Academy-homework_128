@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Safe Travel Anywhere with us"> <!--опис сторінки для пошуковиків-->
+  <title>Bhromaon</title>
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon"> <!-- значок  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aleo&family=Josefin+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> <!--це сайт https://animate.style/ (підключаю бібліотеку а потім на сайті дивлюсь анімацію і ім'я класу )   -->
+  <link rel="stylesheet" href="scss/index.min.css">
+</head>
+<body>
+  <!--header------------------------------------------------------------------->
+  <header>
+    <div class="container">
+      <div class="content_column_center">
+        <h1 class="animate__animated animate__flipInY animate__delay-1s">Bhromaon</h1>
+        <p class="animate__animated animate__flipInY animate__delay-1s">Safe Travel Anywhere</p>
+        <form action="1" class="animate__animated animate__delay-1s animate__fadeInUpBig"> <!--форма-->
+          <input id="idEmail" type="search" name="src_inp" placeholder="Search Your Travel Destination" required>
+          <button type="submit" class="button_header">
+            <svg class="search_header">
+              <use xlink:href="sprite.svg#search"></use> <!--<symbol id="search" viewBox="0 0 64 64">-->
+            </svg>
+            <span class="text_button header_btn_text">Search</span>
+          </button>
+        </form>
+        <!--анімована стрілочка вниз (перестала працювати скотиняка)-->
+        <a href="#first_sect" class="animate__animated animate__delay-1s animate__backInUp"><small>Scroll Down</small></a> <!--це класс з сайту animate__backInUp-->
+        <a href="#first_sect" class="animate__animated animate__delay-1s animate__backInUp"><svg class="chevron-down">
+          <use xlink:href="sprite.svg#chevron-down"></use> <!--<symbol id="chevron-down" viewBox="0 0 56 64"> з спрайта -->
+        </svg></a>
+      </div>
+    </div>
+    <div class="bgr_nav_and_logo">
+      <div class="container">
+        <div class="nav_and_logo">
+          <h2>Bhromaon</h2>
+          <nav id="myTopnav" class="nav">
+            <ul>
+              <li class="nav_list"><a href="#">Who We Are</a></li>
+              <li class="nav_list"><a href="#">What We Do</a></li>
+              <li class="nav_list"><a href="#">Travel With Us</a></li>
+              <li class="nav_list"><a href="#">Contact Us</a></li>
+            </ul>
+            <button onclick="myFunction()" class="burger-menu"> <!--бургер відкривається вгору ,перевірив з ResponsivelyApp-->
+              <span class="burger-menu_line"></span>
+              <span class="burger-menu_line"></span>
+              <span class="burger-menu_line"></span>
+            </button>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--header-------------------------------------------------->
+  <main>
+    <div class="bgr_first_section">
+    <div class="container">
+      <section class="first_section relative" id="first_sect">
+        <div class="text_first_section">
+          <h5>Why Choose Us</h5>
+          <span class="text under_heading section_first">Tion and dislike men who are so beguiled and demoralized by desire by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee<br><br>Ddislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that.</span>
+          <a class="button_other_section" href="#"><span class="text_button other_btn_text">Explore Places</span></a>
+        </div>
+        <div class="img_first_section"> <!--Зображення -->
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/Image1.png">
+            <img src="img/576/Image1.png" alt="photo_mountains" class="small_img first_img">
+          </picture>
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/Image(1)1.png">
+            <img src="img/576/Image(1)1.png" alt="photo_mountains" class="small_img second_img">
+          </picture>
+        </div>
+      </section>
+    </div>
+    </div>
+    <div class="bgr_section_second">
+      <div class="container">
+        <section class="section_second search_section_second">
+          <div class="content_row_center gap_second_section">
+            <div class="content_column_center width_block">
+              <svg class="icon_second_section">
+                <use xlink:href="sprite.svg#search"></use> <!--одне зображення багаторазово-->
+              </svg>
+              <h5>Search Places</h5>
+            </div>
+            <div class="content_column_center width_block">
+              <svg class="icon_second_section">
+                <use xlink:href="sprite.svg#check-circle"></use> <!--це спрайт symbol id="check-circle" -->
+              </svg>
+              <h5>Select Places</h5>
+            </div>
+            <div class="content_column_center width_block">
+              <svg class="icon_second_section">
+                <use xlink:href="sprite.svg#thumbs-up"></use> <!-- спрайт <symbol id="thumbs-up" viewBox="0 0 64 64">-->
+              </svg>
+              <h5>Book & Enjoy</h5>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!--Спейн-->
+    <div class="bgr_section_third">
+    <div class="container">
+      <section class="section_third">
+        <div class="side_left">
+          <div class="card direction-column">
+            <span class="text top_heading">Spain</span>
+            <h3>Grand Spain Madrid</h3>
+            <span class="text under_heading text_cards">But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system</span>
+            <a class="button_other_section" href="#"><span class="text_button other_btn_text">book now</span></a>
+          </div>
+        </div>
+      </section>
+      </div>
+    </div>
+    <div class="bgr_section_fourth">
+    <div class="container">
+      <section class="section_fourth">
+        <div class="side_right">
+          <div class="card direction-column">
+            <span class="text top_heading">Spain</span>
+            <h3>Grand Spain Madrid</h3>
+            <span class="text under_heading text_cards">But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system</span>
+            <a class="button_other_section" href="#"><span class="text_button other_btn_text">book now</span></a>
+          </div>
+        </div>
+      </section>
+      </div>
+    </div>
+    <div class="bgr_fifth_section">
+    <div class="container">
+      <section class="reletive fifth_section">
+        <div class="direction-column">
+          <h5 class="heading_fifth_section">What Our  Tourists Say</h5>
+          <div class="content_row_center margin_fifth_section">
+            <!--кщо ширина вікна браузера більше 1361px, то використовується зображення img/ReviewPhoto.png, якщо від 1251px до 1360px - img/1360/ReviewPhoto.png і так далі. Тег <img> вкладений всередину <picture> використовується як резервне зображення для випадків, коли жоден з <source> не відповідає умовам.-->
+            <picture class="height_picture">
+              <source media="(min-width: 1361px)" srcset="img/ReviewPhoto.png">
+              <source media="(min-width: 1251px)" srcset="img/1360/ReviewPhoto.png">
+              <source media="(min-width: 993px)" srcset="img/1024/ReviewPhoto.png">
+              <source media="(min-width: 768px)" srcset="img/768/ReviewPhoto.png">
+              <img src="img/ReviewPhoto.png" alt="Чоловік з портфелем дивиться на гори">
+            </picture>
+            <div class="text_fifth_section">
+              <h3 class="header_card_fifth_section">Sam Sumon</h3>
+              <div class="under_heading_fifth_section">
+                <svg class="icon_quote">
+                  <use xlink:href="sprite.svg#quote-left"></use> <!--спрайт <symbol id="quote-left" viewBox="0 0 64 64">-->
+                </svg>
+                <span class="text under_heading">But I must explain to you how all this mistaken idea of account to denouncinpleasure and praising pain  But I must explain to you how all this mistaken idea of account to nai denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system was account  born and I account will give you a nai the complete account of the system</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  </main>
+  <!--футер та спрайти-->
+  <footer>
+    <div class="container">
+      <div class="align_center">
+        <h2 class="heading_footer">Bhromaon</h2>
+        <small>Safe Travel Anywhere</small>
+        <div class="content_row_center icons_footer">
+          <a href="https://facebook.com"><svg class="icon_footer facebook">
+            <use xlink:href="sprite.svg#facebook"></use>
+          </svg></a>
+          <a href="https://twitter.com"><svg class="icon_footer twitter">
+            <use xlink:href="sprite.svg#twitter"></use>
+          </svg></a>
+          <a href="https://linkedin.com"><svg class="icon_footer linkedin">
+            <use xlink:href="sprite.svg#linkedin"></use>
+          </svg></a>
+          <a href="https://youtube.com"><svg class="icon_footer youtube">
+            <use xlink:href="sprite.svg#youtube"></use>
+          </svg></a>
+          <a href="https://pinterest.com"><svg class="icon_footer pinterest">
+            <use xlink:href="sprite.svg#pinterest"></use>
+          </svg></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/burgerMenu.js"></script>
+</body>
+</html>

@@ -45,7 +45,7 @@ color: #808080;
     padding-bottom: 100px; 
 }
 /*===BODY================================================*/
-.body { 
+body { 
     font-family: 'Open Sans', sans-serif;
     color: var(--Black, #070707);
     font-size: 18px;

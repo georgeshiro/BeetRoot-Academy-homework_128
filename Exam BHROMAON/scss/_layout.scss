@@ -1,0 +1,346 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@use 'variables' as *;
+
+.search_header {
+  height: 16px;
+  width: 16px;
+  fill: $main_color_text;
+}
+
+.chevron-down {
+  width: 14px;
+  height: 16px;
+  margin: 4px 0px 120px 0px;
+}
+
+.bgr_nav_and_logo {
+  background: $main_color_layout;
+}
+
+.small_img {
+  width: 350px;
+  height: 220px;
+}
+
+.first_img {
+  margin: 124px 0px 16px 0px;
+}
+
+.second_img {
+  margin: 0px 0px 124px 62px;
+}
+
+.left_side {
+  margin-left: 300px;
+}
+
+.bgr_section_second {
+  background: #333333;
+}
+
+.width_block {
+  width: 424px;
+  margin: 106px 0px 60px 0px;
+  gap: 4px;
+}
+
+.icon_second_section {
+  width: 64px;
+  height: 64px;
+  padding: 16px;
+  background: #333333;
+}
+
+.search_section_second {
+  fill: $main_color_layout;
+}
+
+.line {
+  width: 872px;
+  height: 90px;
+}
+
+.gap_second_section {
+  gap: 24px;
+  background-image: url(../img/Line.png);
+  background-repeat: no-repeat;
+  background-position: 50% 30%; /**перше значення (50%) вказує горизонтальну позицію зображення, - по центру, а друге значення (30%) вказує вертикальну позицію зображення, в - ближче до верхньої частини контейнера.**/
+}
+
+.text_cards {
+  margin-bottom: 24px;
+  max-width: 585px;
+}
+
+.icon_quote {
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+}
+
+.photo_fifth_section {
+  width: 440px;
+}
+
+.under_heading_fifth_section {
+  max-width: 760px;
+}
+
+.text_fifth_section {
+  padding: 47px 65px 47px 60px;
+  background: #333333;
+}
+
+.heading_fifth_section {
+  text-align: center;
+  margin: 120px 0px 60px 0px;
+}
+
+.margin_fifth_section {
+  margin-bottom: 176px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.icon_footer {
+  fill: $main_color_text;
+  height: 32px;
+}
+
+.facebook {
+  width: 20px;
+}
+
+.twitter {
+  width: 32px;
+}
+
+.linkedin {
+  width: 28px;
+}
+
+.youtube {
+  width: 36px;
+}
+
+.pinterest {
+  width: 32px;
+}
+
+.align_center {
+  text-align: center;
+}
+
+.heading_footer {
+  padding: 80px 0px 8px 0px;
+  height: 28px;
+}
+
+.icons_footer {
+  gap: 32px;
+  padding: 20px 0px 80px 0px;
+}
+
+.header_card_fifth_section {
+  margin: 0px 0px 16px 0px;
+}
+
+.burger-menu_line {
+  width: 40px;
+  height: 2px;
+  background-color: $main_color_text;
+  display: none;
+  margin: 9px 0;
+}
+
+.responsive {
+  .burger-menu_line {
+    margin: 0;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); /**CSS-свойство transform позволяет вам поворачивать, масштабировать, наклонять или сдвигать элемент. Оно модифицирует координатное пространство для CSS визуальной форматируемой модели.**/
+
+    &:first-child {
+    -webkit-transform: rotate(45deg) translate(0,-50%);
+        -ms-transform: rotate(45deg) translate(0,-50%);
+            transform: rotate(45deg) translate(0,-50%);
+    }
+
+    &:nth-child(2) {
+    -webkit-transform: rotate(-45deg) translate(8%,-60%);
+        -ms-transform: rotate(-45deg) translate(8%,-60%);
+            transform: rotate(-45deg) translate(8%,-60%);
+    }
+    &:last-child {
+    display: none;
+    }
+  }
+
+  ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #123345;
+    height: 100%;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+
+  li {
+    font-size: 30px;
+  }
+
+  .burger-menu {
+  position: absolute;
+  top: 50px;
+  right: 30px;
+  background: none;
+}
+}
+
+@media screen and (max-width: 1440px) {
+  .second_img {
+    margin: 0px 0px 124px 110px;
+  }
+}
+
+@media screen and (max-width: 1360px) {
+  .width_block {
+    width: 364px;
+  }
+
+  .gap_second_section {
+    background-image: url(../img/1360/Line.png);
+  }
+
+  .text_cards {
+    max-width: 494px;
+  }
+
+  .under_heading_fifth_section {
+    max-width: 640px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .second_img {
+    margin: 0px 0px 124px 36px;
+  }
+
+  .margin_fifth_section {
+    margin: 0px 30px 148px 30px;
+  }
+
+  .under_heading_fifth_section {
+    max-width: 520px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .margin_fifth_section {
+    margin: 0px 17px 120px 17px;
+  }
+
+  .text_fifth_section {
+    padding: 47px 60px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .first_img {
+    margin: 60px 0px 0px 0px;
+  }
+
+  .second_img {
+    margin: 60px 0px 0px 24px;
+  }
+
+  .gap_second_section {
+    background-image: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .width_block {
+    margin: 59px 0px 60px 0px;
+  }
+
+  .heading_fifth_section {
+    margin: 60px 0px;
+  }
+
+  .margin_fifth_section {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .under_heading_fifth_section {
+    max-width: 600px;
+  }
+
+  .height_picture {
+    height: 336px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .text_cards {
+    max-width: 720px;
+  }
+
+  .small_img {
+    width: 258px;
+    height: 162px;
+  }
+
+  .height_picture {
+    height: 210px;
+  }
+}
+
+@media screen and (max-width: 655px) {
+  .first_img {
+    margin: 20px 0px 0px 0px;
+  }
+
+  .second_img {
+    margin: 20px 0px 0px 0px;
+  }
+
+  .width_block {
+    margin: 10px 0px 10px 0px;
+  }
+
+  .heading_fifth_section {
+    margin: 30px 10px;
+    font-size: 30px;
+  }
+
+  .burger-menu_line {
+		display: block;
+	}
+}

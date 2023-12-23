@@ -1,0 +1,175 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@use 'variables' as *;
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.content_column_center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.button_header {
+  padding: 18px 24px;
+  width: 139px;
+  height: 52px;
+  position: absolute;
+  right: 5px;
+  top: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.nav_and_logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 577px;
+  padding: 32px 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.direction-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content_row_center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.side_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 220px 300px 120px 0px;
+}
+//**"position: absolute;" розміщує елемент абсолютно відносно його найближчого ... ... ... батьківського елементу, що має властивість "position" встановлену на "relative", "absolute" або "fixed". "display: flex;" встановлює контейнеру тип відображення "flex", що дозволяє використовувати гнучкий контейнер для організації елементів у відповідному напрямку. "right: 412px;" встановлює відстань від правого краю батьківського елементу, а "flex-direction: column;" вказує, що дочірні елементи розташовуються в стовпчик.**/
+.img_first_section {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  right: 412px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+/**.img_first_section" для різних розмірів екрану. При ширині екрану до 1800px, властивість "right" для елементу ".img_first_section" змінюється на 110px, щоб адаптувати позицію елементу до відповідного розміру екран**/
+@media screen and (max-width: 1800px) {
+  .img_first_section {
+    right: 110px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .nav_and_logo {
+    gap: 397px;
+  }
+
+  .side_right {
+    padding: 170px 32px 170px 0px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .nav_and_logo {
+    gap: 217px;
+  }
+
+  .img_first_section {
+    right: 32px;
+  }
+
+  .side_right {
+    padding: 220px 32px 120px 0px;
+  }
+}
+/**".nav_and_logo" та ".img_first_section" при ширині екрану до 992px. Властивість "gap: 32px;" встановлює відстань між дочірніми елементами контейнера ".nav_and_logo". "flex-wrap: wrap;" дозволяє елементам гнучкого контейнера переноситися на новий рядок, якщо вони не поміщаються в один ряд. "margin: 0px 10px;" встановлює зовнішні відступи для контейнера ".nav_and_logo".
+Для елементу ".img_first_section" встановлюється властивість "flex-direction: row;", що змінює напрямок розташування дочірніх елементів на горизонтальний. Також встановлюється "position: static;", "justify-content: center;" та "flex-wrap: wrap;", що змінює позицію, вирівнювання та перенос дочірніх елементів відповідно.**/
+@media screen and (max-width: 992px) {
+  .nav_and_logo {
+    gap: 32px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0px 10px;
+  }
+
+  .img_first_section {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+
+  .img_first_section {
+    position: static;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .side_right {
+    padding: 120px 24px;
+  }
+}
+
+@media screen and (max-width: 655px) {
+  .nav_and_logo {
+    padding: 0px;
+    height: 84px;
+  } 
+
+  .button_header {
+    position: static;
+  }
+
+  .img_first_section {
+    gap: 5px;
+  }
+
+  .side_right {
+    padding: 80px 10px;
+  }
+}

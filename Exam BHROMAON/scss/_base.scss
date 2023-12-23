@@ -1,0 +1,188 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@use 'variables' as *;
+
+html {
+  scroll-behavior: smooth; /**-- плавний скрол **/
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+body,
+li,
+ul,
+a {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+header {
+  background-image: url(../img/HeaderBackground.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+input {
+  width: 647px;
+  height: 60px;
+  font-family: $main_font-family_text;
+  font-size: 14px;
+  letter-spacing: 0.2em;
+  color: #999999;
+  padding: 20px 125px 20px 36px;
+  outline: none;
+}
+
+button {
+  background: $main_color_layout;
+  border: none;
+}
+
+form {
+  position: relative;
+  margin-bottom: 211px;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  height: 12px;
+}
+
+li {
+  font-family: $minor_font-family_text;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+a {
+  color: $main_color_text;
+}
+
+footer {
+  background: #000000;
+}
+
+@media screen and (max-width: 1360px) {
+  header {
+    background-image: url(../img/1360/HeaderBackground.png);
+  }
+}
+
+@media screen and (max-width: 655px) {
+  input {
+    width: 360px;
+    padding: 20px 10px;
+  }
+
+  form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
+    margin-bottom: 149px;
+  }
+
+  ul {
+		display: none;
+	}
+}
+
+.arrow-icon {
+  fill: #fff;
+  -webkit-animation-name: animateArrow;
+          animation-name: animateArrow;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+/**  
+стрілочка повинна анімуватия вниз
+зробити +3 спана в html 
+но вона не працює ,не встиг зробити
+.arrow-icon {
+        fill: #fff;
+        animation-name: animateArrow;
+        animation-duration: 2.5s;
+        animation-timing-function: ease-in;
+        animation-iteration-count: infinite;
+    }
+
+    .arrow-down {
+        margin: 30px;
+    }
+
+    .arrow-down span {
+        display: block;
+        width: 17px;
+        height: 17px;
+        border-bottom: 5px solid #fff;
+        border-right: 5px solid #fff;
+        transform: rotate(45deg);
+        margin: -16px;
+        animation: arrow-down 2s infinite;
+    }
+
+    .arrow-down span:nth-child(2) {
+        animation-delay: -0.2s;
+    }
+
+    .arrow-down span:nth-child(3) {
+        animation-delay: -0.4s;
+    }
+
+    @keyframes arrow-down {
+        0% {
+            opacity: 0;
+            transform: rotate(45deg) translate(-20px, -20px);
+        }
+
+        50% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+            transform: rotate(45deg) translate(20px, 20px);
+        }
+    }
+}
+**/
