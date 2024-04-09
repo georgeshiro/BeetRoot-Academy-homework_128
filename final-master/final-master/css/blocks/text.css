@@ -1,0 +1,56 @@
+.text {
+	margin-left: auto;
+	margin-right: auto;
+	font-family: Montserrat, arial, sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 1.6;
+	text-align: center;
+	color: #333333;
+}
+
+@media screen and (max-width: 480px) {
+	.text {
+		width: 100%;
+		margin-bottom: 5px;
+		text-align: justify;
+	}
+
+	.text--work {
+		width: 95%;
+	}
+}
+
+@media screen and (min-width: 480px) {
+	.text {
+		width: 80%;
+		margin-bottom: 15px;
+	}
+
+	.text--service-2 {
+		margin-bottom: 15px;
+	}
+
+	.text--our-team {
+		margin-bottom: 15px;
+	}
+}
+
+@media screen and (min-width: 1210px) {
+	.text {
+		width: 960px;
+		margin-bottom: 97px;
+	}
+
+	.text--service-2 {
+		margin-bottom: 88px;
+	}
+
+	.text--our-team {
+		margin-bottom: 87px;
+	}
+}
+
+
+
+

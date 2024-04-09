@@ -1,0 +1,57 @@
+.slick-prev,
+.slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 12px;
+    height: 21px;
+    margin-top: -5px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    background: transparent;
+}
+
+.slick-prev {
+    background-image: url('../../img/prev.png');
+}
+
+.slick-next {
+    background-image: url('../../img/next.png');
+}
+
+@media screen and (max-width: 480px) {
+    .slick-prev {
+        left: -25px;
+    }
+
+    .slick-next {
+        right: -25px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .slick-prev {
+        left: -50px;
+    }
+
+    .slick-next {
+        right: -50px;
+    }
+}
+
+@media screen and (min-width: 1210px) {
+    .slick-prev {
+        left: -88px;
+    }
+
+    .slick-next {
+        right: -87px;
+    }
+}

@@ -1,0 +1,23 @@
+@media screen and (max-width: 480px) {
+	.about-us {
+		width: 95%;
+		padding-top: 7px;
+	}
+}
+
+@media screen and (min-width: 480px) {
+	.about-us {
+		width: 95%;
+		padding-top: 20px;
+	}
+}
+
+
+@media screen and (min-width: 1210px) {
+	.about-us {
+		width: 1200px;
+		padding-top: 85px;
+	}	
+}
+
+

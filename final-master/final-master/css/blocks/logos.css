@@ -1,0 +1,17 @@
+@media screen and (max-width: 480px) {
+	.logos {
+		margin-bottom: 10px;
+	}
+}
+
+@media screen and (min-width: 480px) {
+	.logos {
+		margin-bottom: 20px;
+	}
+}
+
+@media screen and (min-width: 1210px) {
+	.logos {
+		margin-bottom: 62px;
+	}
+}

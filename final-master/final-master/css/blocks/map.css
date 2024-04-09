@@ -1,0 +1,22 @@
+.map {
+	width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+	.map {
+		height: 50vh;
+	}	
+}
+
+@media screen and (min-width: 480px) {
+	.map {
+		height: 50vh;
+	}
+}
+
+
+@media screen and (min-width: 1210px) {
+	.map {
+		height: 546px;
+	}
+}

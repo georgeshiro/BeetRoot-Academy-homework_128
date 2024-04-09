@@ -1,0 +1,52 @@
+.header {
+	width: 100%;
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	z-index: 9999;
+}
+
+.header__container {
+	display: flex;
+	justify-content: space-between;
+}
+
+@media screen and (max-width: 480px) {
+	.header {
+		background-color: #f38181;
+		opacity: 0.9;
+	}
+
+	.header__container {
+		width: 100%;
+		padding: 10px 20px;
+	}
+}
+
+@media screen and (min-width: 480px) {
+	.header {
+		background-color: #f38181;
+		opacity: 0.7;
+		transition: 0.5s;
+	}
+	
+	.header__container {
+		width: 100%;
+		padding: 10px 20px;
+	}
+}
+
+@media screen and (min-width: 1210px) {
+	.header {
+		opacity: 0.5;
+		transition: 0.5s;
+	}
+
+	.header:hover {
+		opacity: 1;
+	}
+
+	.header__container {
+		width: 1200px;
+	}
+}

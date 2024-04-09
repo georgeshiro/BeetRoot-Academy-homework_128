@@ -1,0 +1,157 @@
+.service {
+	box-sizing: border-box;
+}
+
+.service__list {
+	position: relative;
+	box-sizing: border-box;
+	margin-bottom: 23px;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+}
+
+.service__item {
+	box-sizing: border-box;
+}
+
+.service__name {
+	position: relative;
+	font-family: Montserrat, arial, sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #333333;
+}
+
+.service__name::before {
+	position: absolute;
+	content: '';
+	display: block;
+	background-size: contain;
+}
+
+.service__name--photography::before {
+	background-image: url('../../img/photo.png');
+}
+
+.service__name--design::before {
+	background-image: url('../../img/design.png');
+}
+
+.service__name--creativity::before {
+	background-image: url('../../img/creativity.png');
+}
+
+.service__name--seo::before {
+	background-image: url('../../img/seo.png');
+}
+
+.service__name--css-html::before {
+	background-image: url('../../img/css-html.png');
+}
+
+.service__name--digital::before {
+	background-image: url('../../img/digital.png');
+}
+
+.service__text {
+	font-family: Roboto, arial, sans-serif;
+	font-weight: 400;
+	line-height: 1.6;
+	color: #999999;
+}
+
+@media screen and (max-width: 480px) {
+	.service {
+		width: 95%;
+	}
+
+	.service__list {
+		margin-bottom: 5px;
+	}
+
+	.service__item {
+		width: 50%;
+		margin-bottom: 10px;
+		padding-left: 30px;
+	}
+
+	.service__name {
+		margin-bottom: 4px;
+		font-size: 14px;
+	}
+
+	.service__name::before {
+		width: 20px;
+		height: 20px;
+		transform: translateX(-25px);
+	}
+
+	.service__text {
+		font-size: 13px;
+	}
+}
+
+@media screen and (min-width: 480px) {
+	.service {
+		width: 95%;
+	}
+
+	.service__list {
+		margin-bottom: 13px;
+	}
+
+	.service__item {
+		width: 33.3333333333%;
+		margin-bottom: 30px;
+		padding-left: 40px;
+	}
+
+	.service__name {
+		margin-bottom: 5px;
+		font-size: 14px;
+	}
+
+	.service__name::before {
+		width: 25px;
+		height: 25px;
+		transform: translateX(-30px);
+	}
+
+	.service__text {
+		font-size: 14px;
+	}
+}
+
+@media screen and (min-width: 1210px) {
+	.service {
+		width: 1200px;
+	}
+
+	.service__list {
+		margin-bottom: 23px;
+	}
+
+	.service__item {
+		width: 33.3333333333%;
+		margin-bottom: 96px;
+		padding-left: 90px;
+	}
+
+	.service__name {
+		margin-bottom: 11px;
+	}
+
+	.service__name::before {
+		width: 32px;
+		height: 32px;
+		transform: translateX(-60px);
+	}
+
+	.service__text {
+		font-size: 15px;
+	}
+}
+
+

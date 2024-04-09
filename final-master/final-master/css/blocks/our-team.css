@@ -1,0 +1,20 @@
+@media screen and (max-width: 480px) {
+	.our-team {
+		width: 90%;
+		padding-top: 5px;
+	}
+}
+
+@media screen and (min-width: 480px) {
+	.our-team {
+		width: 95%;
+		padding-top: 15px;
+	}
+}
+
+@media screen and (min-width: 1210px) {
+	.our-team {
+		width: 1200px;
+		padding-top: 95px;
+	}
+}

@@ -1,0 +1,25 @@
+.title {
+	font-family: 'KaushanScript', cursive;
+	font-size: 24px;
+	text-align: center;
+	color: #333333;
+}
+
+@media screen and (max-width: 480px) {
+	.title {
+		margin-bottom: 5px;
+	}
+}
+
+@media screen and (min-width: 480px) {
+	.title {
+		margin-bottom: 10px;
+	}
+}
+
+@media screen and (min-width: 1210px) {
+	.title {
+		margin-bottom: 15px;
+	}
+}
+

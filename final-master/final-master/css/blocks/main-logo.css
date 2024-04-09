@@ -1,0 +1,56 @@
+.main-logo {
+	font-family: Montserrat, arial, sans-serif;
+	font-weight: 700;
+	color: #ffffff;
+}
+
+.main-logo--about {
+	margin-top: 0;
+	font-family: Montserrat, arial, sans-serif;
+	font-weight: 700;
+	color: #cccccc;
+}
+
+.main-logo__link {
+	color: inherit;
+	text-decoration: none;
+}
+
+.main-logo__link--top:hover {
+	color: #fce38a;
+}
+
+@media screen and (max-width: 480px) {
+	.main-logo {
+		font-size: 16px;
+	}
+
+	.main-logo--about {
+		width: 100%;
+		margin-bottom: 5px;
+		font-size: 18px;
+		text-align: center;
+	}
+}
+@media screen and (min-width: 480px) {
+	.main-logo {
+		font-size: 16px;
+	}
+
+	.main-logo--about {
+		margin-bottom: 15px;
+		font-size: 23px;
+	}
+}
+@media screen and (min-width: 1210px) {
+	.main-logo {
+		margin-top: 16px;
+		font-size: 30px;
+	}
+
+	.main-logo--about {
+		margin-top: 0;
+		margin-bottom: 29px;
+		font-size: 46px;
+	}
+}

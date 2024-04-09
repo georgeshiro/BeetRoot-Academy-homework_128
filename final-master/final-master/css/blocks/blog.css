@@ -1,0 +1,151 @@
+.blog__title {
+	font-family: Montserrat, arial, sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #333333;
+}
+
+.blog__list {
+	padding: 0;
+	list-style: none;
+}
+
+.blog__link {
+	display: flex;
+	text-decoration: none;
+}
+
+.blog__description {
+	font-family: Montserrat, arial, sans-serif;
+	font-size: 12px;
+	line-height: 1.5;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #333333;
+}
+
+.blog__date {
+	display: block;
+	font-family: Roboto, arial, sans-serif;
+	font-size: 13px;
+	line-height: 1.85;
+	font-weight: 300;
+	font-style: italic;
+	text-transform: none;
+	color: #999999;
+}
+
+@media screen and (max-width: 480px) {
+	.blog {
+		width: 100%;
+		margin-bottom: 10px;
+		border-bottom: 1px solid #e5e5e5;
+	}
+
+	.blog__list {
+		width: 100%;
+	}
+
+	.blog__item {
+		margin-bottom: 5px;
+	}
+
+	.blog__title {
+		margin-bottom: 10px;
+		text-align: center;
+	}
+
+	.blog__link{
+		justify-content: space-between;
+	}
+
+	.blog__image-wrap {
+		width: 49%;
+	}
+
+	.blog__description {
+		width: 49%;
+		margin-bottom: 5px;
+	}
+}
+
+@media screen and (min-width: 480px) {
+	.blog {
+		width: 100%;
+		padding-top: 10px;
+		order: 3;
+	}
+	.blog__item{
+		margin-bottom: 5px;
+	}
+
+	.blog__title {
+		margin-bottom: 10px;
+		text-align: center;
+	}
+
+	.blog__list {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.blog__item{
+		width: 33%;
+		margin-bottom: 5px;
+	}
+
+	.blog__link{
+		flex-direction: column;
+	}
+
+	.blog__image-wrap {
+		width: 100%;
+	}
+
+	.blog__description {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 1210px) {
+	.blog {
+		width: 386px;
+		padding: 0;
+		order: 0;
+	}
+
+	.blog__title {
+		margin-top: 8px;
+		margin-bottom: 37px;
+		text-align: left;
+	}
+
+	.blog__list {
+		flex-direction: column;
+	}
+
+	.blog__item{
+		width: 100%;
+		margin-bottom: 28px;
+	}
+
+	.blog__link{
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.blog__image-wrap {
+		width: 120px;
+		margin-right: 20px;
+		margin-bottom: 0;
+	}
+
+	.blog__description {
+		width: 200px;
+		margin-top: 17px;
+		margin-bottom: 5px;
+	}
+}

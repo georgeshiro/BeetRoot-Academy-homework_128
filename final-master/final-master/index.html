@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BeetRoot</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+	<header class="header">
+		<div class="header__container">
+			<p class="main-logo">
+				<a class="main-logo__link main-logo__link--top" href="#">BeetRoot</a>
+			</p>
+			<nav class="site-navigation">
+				<ul class="main-navigation">
+					<li class="main-navigation__item">
+						<a class="main-navigation__link" href="#about-us">about</a>
+					</li>
+					<li class="main-navigation__item">
+						<a class="main-navigation__link" href="#service">service</a>
+					</li>
+					<li class="main-navigation__item">
+						<a class="main-navigation__link" href="#work">work</a>
+					</li>
+					<li class="main-navigation__item">
+						<a class="main-navigation__link" href="#contact">contact</a>
+					</li>
+					<li class="main-navigation__item">
+						<a class="main-navigation__link main-navigation__link" href="#">
+							<svg width="18px" height="15px">
+								<path
+									d="M17.726,3.663 L17.727,3.663 L15.252,9.163 L15.252,9.163 C15.130,9.434 14.866,9.627 14.555,9.647 L14.555,9.647 L7.427,10.123 L7.839,11.299 L15.600,11.299 C16.511,11.299 17.250,12.038 17.250,12.950 C17.250,13.861 16.511,14.600 15.600,14.600 C14.689,14.600 13.950,13.861 13.950,12.950 L6.250,12.950 C6.250,13.861 5.511,14.600 4.600,14.600 C3.689,14.600 2.950,13.861 2.950,12.950 C2.950,12.038 3.689,11.299 4.600,11.299 L6.091,11.299 L2.915,2.225 L1.025,2.225 C0.569,2.225 0.200,1.855 0.200,1.399 C0.200,0.944 0.569,0.575 1.025,0.575 L3.500,0.575 C3.860,0.575 4.163,0.806 4.276,1.128 L4.279,1.127 L4.759,2.500 L16.975,2.500 C17.431,2.500 17.800,2.869 17.800,3.325 C17.800,3.445 17.773,3.559 17.726,3.663 ZM5.337,4.150 L6.862,8.507 L13.951,8.034 L15.699,4.150 L5.337,4.150 Z"/>
+							</svg>
+						</a>
+					</li>
+					<li class="main-navigation__item">
+						<a class="main-navigation__link main-navigation__link" href="#">
+							<svg width="18px" height="18px">
+								<path
+									d="M17.317,14.983 C17.615,15.281 17.800,15.694 17.800,16.150 C17.800,17.061 17.061,17.799 16.150,17.799 C15.694,17.799 15.282,17.615 14.983,17.316 L14.983,17.316 L10.147,12.480 C9.165,13.061 8.023,13.400 6.800,13.400 C3.155,13.400 0.200,10.445 0.200,6.800 C0.200,3.155 3.155,0.200 6.800,0.200 C10.445,0.200 13.400,3.155 13.400,6.800 C13.400,8.023 13.061,9.165 12.481,10.147 L17.317,14.983 L17.317,14.983 ZM6.800,1.849 C4.066,1.849 1.850,4.065 1.850,6.800 C1.850,9.534 4.066,11.750 6.800,11.750 C9.534,11.750 11.750,9.534 11.750,6.800 C11.750,4.065 9.534,1.849 6.800,1.849 Z"/>
+							</svg>
+						</a>
+					</li>
+				</ul>
+				<button class="hamburger">
+					<span class="hamburger__element"></span>
+				</button>
+			</nav>
+		</div>
+	</header>
+	<section class="section section--banner">
+		<div class="intro-slider">
+			<input type="radio" class="intro-slider__input  intro-slider__input--1" id="intro-slider-input-1" name="intro-slider-input" checked>
+			<input type="radio" class="intro-slider__input  intro-slider__input--2" id="intro-slider-input-2" name="intro-slider-input">
+			<input type="radio" class="intro-slider__input  intro-slider__input--3" id="intro-slider-input-3" name="intro-slider-input">
+			<input type="radio" class="intro-slider__input  intro-slider__input--4" id="intro-slider-input-4" name="intro-slider-input">
+			<ul class="intro-slider__list">
+				<li class="intro-slider__item intro-slider__item--1">
+					<h1 class="intro-slider__title">I'm proud to present</h1>
+					<p class="intro-slider__sub-title">Welcome<br> to BeetRoot</p>
+					<a class="intro-slider__btn" href="#">Learn more</a>
+				</li>
+				<li class="intro-slider__item intro-slider__item--2">
+					<h1 class="intro-slider__title">Work</h1>
+					<p class="intro-slider__sub-title">Welcome<br> to BeetRoot</p>
+					<a class="intro-slider__btn" href="#">Learn more</a>
+				</li>
+				<li class="intro-slider__item intro-slider__item--3">
+					<h1 class="intro-slider__title">About 3</h1>
+					<p class="intro-slider__sub-title">Welcome<br> to BeetRoot</p>
+					<a class="intro-slider__btn" href="#">Learn more</a>
+				</li>
+				<li class="intro-slider__item intro-slider__item--4">
+					<h1 class="intro-slider__title">Contacts 4</h1>
+					<p class="intro-slider__sub-title">Welcome<br> to BeetRoot</p>
+					<a class="intro-slider__btn" href="#">Learn more</a>
+				</li>
+			</ul>
+			<ul class="intro-slider__controls">
+				<li>
+					<label class="intro-slider__control  intro-slider__control--1" for="intro-slider-input-1"><span>01</span> Intro</label>
+				</li>
+				<li>
+					<label class="intro-slider__control  intro-slider__control--2" for="intro-slider-input-2"><span>02</span> Work</label>
+				</li>
+				<li>
+					<label class="intro-slider__control  intro-slider__control--3" for="intro-slider-input-3"><span>03</span> About</label>
+				</li>
+				<li>
+					<label class="intro-slider__control  intro-slider__control--4" for="intro-slider-input-4"><span>04</span> Contacts</label>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section class="section section--about-us" id="about-us">
+		<div class="about-us">
+			<h2 class="title">What we do</h2>
+			<p class="sub-title">Story about us</p>
+			<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<ul class="gallery-about-us">
+				<li class="gallery-about-us__item">
+					<div class="gallery-about-us__image-wrap">
+						<img src="img/about-img-1.jpg" alt="" class="gallery-about-us__image">
+						<a class="gallery-about-us__link" href="#">super team</a>
+					</div>
+				</li>
+				<li class="gallery-about-us__item">
+					<div class="gallery-about-us__image-wrap">
+						<img src="img/about-img-2.jpg" alt="" class="gallery-about-us__image">
+						<a class="gallery-about-us__link" href="#">super team</a>
+					</div>
+				</li>
+				<li class="gallery-about-us__item">
+					<div class="gallery-about-us__image-wrap">
+						<img src="img/about-img-3.jpg" alt="" class="gallery-about-us__image">
+						<a class="gallery-about-us__link" href="#">super team</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section class="section section--facts">
+		<h2 class="visually-hidden">Facts</h2>
+		<ul class="facts">
+			<li class="facts__item">
+				<p class="facts__number">1M</p>
+				<p class="facts__name">Web Design Projects</p>
+			</li>
+			<li class="facts__item">
+				<p class="facts__number">1M+</p>
+				<p class="facts__name">happy client</p>
+			</li>
+			<li class="facts__item">
+				<p class="facts__number">9</p>
+				<p class="facts__name">years of experience</p>
+			</li>
+			<li class="facts__item">
+				<p class="facts__number">999</p>
+				<p class="facts__name">cup of coffee</p>
+			</li>
+			<li class="facts__item">
+				<p class="facts__number">11</p>
+				<p class="facts__name">members</p>
+			</li>
+		</ul>
+	</section>
+	<section class="section section--service" id="service">
+		<div class="service">
+			<h2 class="title">We work with</h2>
+			<p class="sub-title sub-title--service">Amazing Services</p>
+			<ul class="service__list">
+				<li class="service__item">
+					<p class="service__name service__name--photography">Photography</p>
+					<p class="service__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+				</li>
+				<li class="service__item">
+					<p class="service__name service__name--design">Web Design</p>
+					<p class="service__text">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+				</li>
+				<li class="service__item">
+					<p class="service__name service__name--creativity">Creativity</p>
+					<p class="service__text">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+				</li>
+				<li class="service__item">
+					<p class="service__name service__name--seo">seo</p>
+					<p class="service__text">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+				</li>
+				<li class="service__item">
+					<p class="service__name service__name--css-html">Css/Html</p>
+					<p class="service__text">Lorem dolor sit amet, consectetur adipiscing elit, sed do tempor.</p>
+				</li>
+				<li class="service__item">
+					<p class="service__name service__name--digital">digital</p>
+					<p class="service__text">Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section class="section section--feauture">
+		<div class="feauture">
+			<h2 class="title">For all devices</h2>
+			<p class="sub-title">Unique design</p>
+			<div class="feauture__image">
+				<div class="feauture__image-big">
+					<img src="img/display768x1024.png" alt="display 768*1024">
+				</div>
+				<div class="feauture__image--little">
+					<img src="img/display-little.png" alt="display little">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section section--service-2">
+		<div class="service-2">
+			<h2 class="title">Service</h2>
+			<p class="sub-title">what we do</p>
+			<p class="text text--service-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<section class="service-2__accordion">
+				<h2 class="visually-hidden">WHAT WE DO</h2>
+				<div class="service-2__image">
+					<img src="img/service-2__image.png" alt="photo">
+				</div>
+				<section class="accordion">
+					<div class="accordion__wrap-content">
+				    	<div class="accordion__item">
+					    	<h3 class="accordion__title accordion__title--photography">Photography</h3>
+					    	<div class="accordion__arrow"></div>
+				 		</div>
+				 		<div class="accordion__wrap-text">
+					    	<p class="accordion__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					    </div>
+					</div>
+					<div class="accordion__wrap-content">
+				    	<div class="accordion__item">
+					    	<h3 class="accordion__title accordion__title--creativity">creativity</h3>
+					    	<div class="accordion__arrow"></div>
+				   		</div>
+				        <div class="accordion__wrap-text">
+					    	<p class="accordion__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					    </div>
+				    </div>
+				    <div class="accordion__wrap-content">
+				    	<div class="accordion__item">
+				            <h3 class="accordion__title accordion__title--design">web design</h3>
+				            <div class="accordion__arrow"></div>
+				    	</div>
+					    <div class="accordion__wrap-text">
+					    	<p class="accordion__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					    </div>
+					</div>
+				</section>
+			</section>
+		</div>
+	</section>
+	<section class="section section--quote">
+		<h2 class="visually-hidden">blockquote</h2>
+		<ul class="slider">
+			<li class="slider__item">
+				<div class="slider__image">
+					<img src="img/quote-img2.png" alt="photo">
+				</div>
+				<div class="slider__text">
+					<blockquote class="slider__blockquote">
+						“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+					</blockquote>
+					<p class="sider__author-blockquote">Jon Doe</p>
+				</div>
+			</li>
+			<li class="slider__item">
+				<div class="slider__image">
+					<img src="img/quote-img2.png" alt="photo">
+				</div>
+				<div class="slider__text">
+					<blockquote class="slider__blockquote">
+						“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+					</blockquote>
+					<p class="sider__author-blockquote">Jon Doe</p>
+				</div>
+			</li>
+			<li class="slider__item">
+				<div class="slider__image">
+					<img src="img/quote-img2.png" alt="photo">
+				</div>
+				<div class="slider__text">
+					<blockquote class="slider__blockquote">
+						“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+					</blockquote>
+					<p class="sider__author-blockquote">Jon Doe</p>
+				</div>
+			</li>
+		</ul>
+	</section>
+	<section class="section section--our-team">
+		<div class="our-team">
+			<h2 class="title">Who we are</h2>
+			<p class="sub-title">Meet our team</p>
+			<p class="text text--our-team">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<ul class="gallery-our-team">
+				<li class="gallery-our-team__item">
+					<div class="gallery-our-team__image-wrap">
+						<img class="gallery-our-team__img" src="img/our-team-img-1.jpg" alt="photo">
+						<div class="gallery-our-team__links">
+							<a class="gallery-our-team__link" href="https://www.facebook.com/">
+								<svg class="gallery-our-team__social gallery-our-team__social--fb">
+									<path fill-rule="evenodd" 
+ 										d="M12.089,0.199 C12.089,1.675 12.089,4.320 12.089,4.320 C12.089,4.320 9.052,4.017 8.291,5.181 C7.875,5.817 8.122,7.681 8.085,9.019 C9.411,9.019 10.788,9.019 12.114,9.019 C11.774,10.583 11.530,11.643 11.279,12.997 C10.132,12.997 8.063,12.997 8.063,12.997 L8.063,25.801 C8.063,25.801 4.266,25.801 2.481,25.801 C2.482,21.854 2.480,17.249 2.481,13.047 C1.614,13.047 0.973,13.047 0.106,13.047 C0.106,11.572 0.106,10.496 0.106,9.019 C0.947,9.019 1.613,9.019 2.455,9.019 C2.575,6.073 2.620,3.155 4.084,1.669 C5.728,-0.002 7.297,0.199 12.089,0.199 Z"/>
+								</svg>
+							</a>
+							<a class="gallery-our-team__link" href="https://twitter.com/">
+								<svg class="gallery-our-team__social">
+									<path fill-rule="evenodd"
+ 										d="M17.513,0.601 C19.547,0.565 20.630,1.306 21.664,2.249 C22.542,2.173 23.683,1.683 24.355,1.341 C24.572,1.223 24.790,1.103 25.008,0.984 C24.624,2.021 24.104,2.833 23.304,3.450 C23.126,3.586 22.950,3.771 22.727,3.858 C22.727,3.862 22.727,3.867 22.727,3.871 C23.867,3.860 24.807,3.345 25.700,3.066 C25.700,3.070 25.700,3.075 25.700,3.079 C25.231,3.824 24.596,4.581 23.919,5.123 C23.646,5.340 23.372,5.557 23.099,5.774 C23.114,6.981 23.081,8.133 22.856,9.147 C21.544,15.042 18.068,19.045 12.567,20.759 C10.591,21.374 7.399,21.627 5.135,21.065 C4.013,20.787 2.999,20.472 2.048,20.057 C1.519,19.825 1.029,19.575 0.561,19.290 C0.407,19.196 0.254,19.102 0.100,19.009 C0.610,19.024 1.208,19.165 1.778,19.073 C2.295,18.989 2.801,19.011 3.278,18.907 C4.466,18.646 5.521,18.301 6.429,17.770 C6.870,17.511 7.539,17.209 7.852,16.837 C7.262,16.848 6.727,16.710 6.289,16.556 C4.590,15.956 3.601,14.853 2.957,13.196 C3.472,13.253 4.955,13.387 5.302,13.094 C4.654,13.058 4.031,12.683 3.585,12.405 C2.218,11.549 1.104,10.115 1.112,7.908 C1.292,7.993 1.471,8.078 1.650,8.163 C1.994,8.308 2.343,8.385 2.752,8.470 C2.925,8.506 3.271,8.607 3.470,8.533 C3.461,8.533 3.453,8.533 3.444,8.533 C3.180,8.226 2.749,8.021 2.483,7.690 C1.606,6.601 0.785,4.924 1.304,2.926 C1.436,2.419 1.645,1.972 1.868,1.559 C1.877,1.563 1.885,1.567 1.894,1.571 C1.996,1.785 2.224,1.942 2.368,2.121 C2.816,2.676 3.368,3.175 3.931,3.615 C5.849,5.116 7.576,6.037 10.350,6.719 C11.054,6.893 11.867,7.025 12.708,7.026 C12.472,6.339 12.548,5.226 12.733,4.561 C13.201,2.887 14.216,1.682 15.706,1.036 C16.062,0.881 16.457,0.768 16.872,0.677 C17.086,0.652 17.299,0.626 17.513,0.601 Z"/>
+								</svg>
+							</a>
+							<a class="gallery-our-team__link gallery-our-team__social--pnt" href="https://www.pinterest.com/">
+								<svg class="gallery-our-team__social">
+									<path fill-rule="evenodd"
+										d="M9.051,16.854 C8.842,17.687 8.631,18.560 8.413,19.414 C8.198,20.256 8.008,21.110 7.695,21.884 C7.176,23.165 6.517,24.403 5.652,25.405 C5.077,26.072 5.199,25.806 5.026,25.770 C4.894,25.743 4.883,25.613 4.857,25.425 C4.716,24.407 4.812,23.230 4.864,22.086 C4.924,20.782 5.198,19.698 5.453,18.615 C5.937,16.552 6.399,14.528 6.888,12.451 C6.920,12.313 7.008,12.085 6.978,12.006 C6.756,11.429 6.612,10.911 6.549,10.306 C6.476,9.610 6.532,8.961 6.688,8.362 C6.965,7.304 7.601,6.367 8.582,6.024 C9.206,5.808 9.897,5.906 10.317,6.156 C10.749,6.415 11.046,6.823 11.184,7.402 C11.332,8.017 11.223,8.753 11.104,9.293 C10.837,10.512 10.486,11.427 10.167,12.603 C10.009,13.186 9.830,13.785 9.978,14.415 C10.114,14.993 10.415,15.391 10.825,15.690 C11.251,16.000 11.755,16.169 12.450,16.145 C13.678,16.102 14.531,15.317 15.101,14.577 C16.014,13.392 16.566,11.793 16.776,9.891 C16.843,9.277 16.893,8.572 16.846,7.877 C16.758,6.593 16.357,5.560 15.719,4.760 C15.113,3.998 14.253,3.391 13.207,3.049 C12.170,2.711 10.735,2.598 9.460,2.816 C7.142,3.213 5.508,4.530 4.545,6.349 C4.041,7.301 3.708,8.396 3.708,9.759 C3.708,10.810 3.967,11.624 4.386,12.259 C4.519,12.460 4.714,12.626 4.844,12.856 C5.029,13.182 4.816,13.667 4.725,14.020 C4.615,14.445 4.603,15.032 4.107,15.042 C3.901,15.046 3.643,14.896 3.469,14.799 C2.164,14.078 1.372,12.766 1.047,11.065 C0.849,10.031 0.850,8.826 1.047,7.827 C1.237,6.860 1.591,5.969 1.984,5.246 C2.798,3.743 3.991,2.541 5.443,1.683 C6.559,1.023 7.818,0.560 9.350,0.337 C9.858,0.263 10.384,0.232 10.955,0.206 C12.623,0.127 14.139,0.505 15.281,1.015 C16.486,1.554 17.448,2.271 18.261,3.161 C19.099,4.076 19.709,5.140 20.095,6.470 C20.297,7.162 20.493,7.902 20.493,8.757 C20.493,9.615 20.312,10.370 20.185,11.125 C19.711,13.953 18.366,16.266 16.347,17.583 C15.858,17.902 15.266,18.196 14.593,18.392 C13.926,18.586 13.165,18.732 12.350,18.675 C11.559,18.621 10.911,18.406 10.367,18.098 C9.827,17.793 9.373,17.419 9.051,16.854 Z"/>
+								</svg>
+							</a>
+							<a class="gallery-our-team__link gallery-our-team__social--inst" href="https://www.instagram.com/">
+								<svg class="gallery-our-team__social">
+									<path fill-rule="evenodd" 
+										d="M22.700,25.800 L3.500,25.800 C1.733,25.800 0.300,24.367 0.300,22.600 L0.300,3.400 C0.300,1.632 1.733,0.200 3.500,0.200 L22.700,0.200 C24.467,0.200 25.900,1.632 25.900,3.400 L25.900,22.600 C25.900,24.367 24.467,25.800 22.700,25.800 ZM13.100,8.039 C11.104,8.039 9.389,9.221 8.602,10.919 L8.597,10.919 C8.589,10.937 8.583,10.956 8.575,10.974 C8.528,11.079 8.487,11.187 8.447,11.296 C8.428,11.348 8.407,11.399 8.390,11.451 C8.353,11.563 8.323,11.676 8.295,11.791 C8.281,11.845 8.265,11.897 8.253,11.951 C8.227,12.072 8.209,12.195 8.192,12.319 C8.185,12.369 8.175,12.418 8.169,12.469 C8.151,12.643 8.140,12.820 8.140,13.000 C8.140,15.739 10.361,17.959 13.100,17.959 C15.839,17.959 18.060,15.739 18.060,13.000 C18.060,12.820 18.049,12.643 18.031,12.469 C18.025,12.418 18.015,12.369 18.008,12.319 C17.991,12.195 17.973,12.072 17.947,11.951 C17.935,11.897 17.919,11.845 17.905,11.791 C17.877,11.676 17.847,11.563 17.810,11.451 C17.793,11.399 17.772,11.348 17.753,11.296 C17.713,11.187 17.672,11.079 17.625,10.974 C17.617,10.956 17.611,10.937 17.603,10.919 L17.598,10.919 C16.811,9.221 15.096,8.039 13.100,8.039 ZM23.020,4.359 C23.020,3.652 22.447,3.080 21.740,3.080 L19.180,3.080 C18.473,3.080 17.900,3.652 17.900,4.359 L17.900,6.920 C17.900,7.627 18.473,8.200 19.180,8.200 L21.740,8.200 C22.447,8.200 23.020,7.627 23.020,6.920 L23.020,4.359 ZM23.020,10.919 L20.660,10.919 C20.842,11.582 20.940,12.280 20.940,13.000 C20.940,17.330 17.430,20.839 13.100,20.839 C8.770,20.839 5.260,17.330 5.260,13.000 C5.260,12.280 5.358,11.582 5.540,10.919 L3.180,10.919 L3.180,21.639 C3.180,22.347 3.753,22.920 4.460,22.920 L21.740,22.920 C22.447,22.920 23.020,22.347 23.020,21.639 L23.020,10.919 Z"/>
+								</svg>
+							</a>
+						</div>
+					</div>
+					<p class="gallery-our-team__name">Широбоков Георгій</p>
+					<p class="gallery-our-team__function">Graphic Design</p>
+				</li>
+				<li class="gallery-our-team__item">
+					<div class="gallery-our-team__image-wrap">
+						<img class="gallery-our-team__img" src="img/our-team-img-2.jpg" alt="photo">
+						<div class="gallery-our-team__links">
+							<a class="gallery-our-team__link" href="https://www.facebook.com/">
+								<svg class="gallery-our-team__social gallery-our-team__social--fb">
+									<path fill-rule="evenodd" 
+ 										d="M12.089,0.199 C12.089,1.675 12.089,4.320 12.089,4.320 C12.089,4.320 9.052,4.017 8.291,5.181 C7.875,5.817 8.122,7.681 8.085,9.019 C9.411,9.019 10.788,9.019 12.114,9.019 C11.774,10.583 11.530,11.643 11.279,12.997 C10.132,12.997 8.063,12.997 8.063,12.997 L8.063,25.801 C8.063,25.801 4.266,25.801 2.481,25.801 C2.482,21.854 2.480,17.249 2.481,13.047 C1.614,13.047 0.973,13.047 0.106,13.047 C0.106,11.572 0.106,10.496 0.106,9.019 C0.947,9.019 1.613,9.019 2.455,9.019 C2.575,6.073 2.620,3.155 4.084,1.669 C5.728,-0.002 7.297,0.199 12.089,0.199 Z"/>
+								</svg>
+							</a>
+							<a class="gallery-our-team__link" href="https://twitter.com/">
+								<svg class="gallery-our-team__social">
+									<path fill-rule="evenodd"
+ 										d="M17.513,0.601 C19.547,0.565 20.630,1.306 21.664,2.249 C22.542,2.173 23.683,1.683 24.355,1.341 C24.572,1.223 24.790,1.103 25.008,0.984 C24.624,2.021 24.104,2.833 23.304,3.450 C23.126,3.586 22.950,3.771 22.727,3.858 C22.727,3.862 22.727,3.867 22.727,3.871 C23.867,3.860 24.807,3.345 25.700,3.066 C25.700,3.070 25.700,3.075 25.700,3.079 C25.231,3.824 24.596,4.581 23.919,5.123 C23.646,5.340 23.372,5.557 23.099,5.774 C23.114,6.981 23.081,8.133 22.856,9.147 C21.544,15.042 18.068,19.045 12.567,20.759 C10.591,21.374 7.399,21.627 5.135,21.065 C4.013,20.787 2.999,20.472 2.048,20.057 C1.519,19.825 1.029,19.575 0.561,19.290 C0.407,19.196 0.254,19.102 0.100,19.009 C0.610,19.024 1.208,19.165 1.778,19.073 C2.295,18.989 2.801,19.011 3.278,18.907 C4.466,18.646 5.521,18.301 6.429,17.770 C6.870,17.511 7.539,17.209 7.852,16.837 C7.262,16.848 6.727,16.710 6.289,16.556 C4.590,15.956 3.601,14.853 2.957,13.196 C3.472,13.253 4.955,13.387 5.302,13.094 C4.654,13.058 4.031,12.683 3.585,12.405 C2.218,11.549 1.104,10.115 1.112,7.908 C1.292,7.993 1.471,8.078 1.650,8.163 C1.994,8.308 2.343,8.385 2.752,8.470 C2.925,8.506 3.271,8.607 3.470,8.533 C3.461,8.533 3.453,8.533 3.444,8.533 C3.180,8.226 2.749,8.021 2.483,7.690 C1.606,6.601 0.785,4.924 1.304,2.926 C1.436,2.419 1.645,1.972 1.868,1.559 C1.877,1.563 1.885,1.567 1.894,1.571 C1.996,1.785 2.224,1.942 2.368,2.121 C2.816,2.676 3.368,3.175 3.931,3.615 C5.849,5.116 7.576,6.037 10.350,6.719 C11.054,6.893 11.867,7.025 12.708,7.026 C12.472,6.339 12.548,5.226 12.733,4.561 C13.201,2.887 14.216,1.682 15.706,1.036 C16.062,0.881 16.457,0.768 16.872,0.677 C17.086,0.652 17.299,0.626 17.513,0.601 Z"/>
+								</svg>
+							</a>
+							<a class="gallery-our-team__link" href="https://www.pinterest.com/">
+								<svg class="gallery-our-team__social">
+									<path fill-rule="evenodd"
+										d="M9.051,16.854 C8.842,17.687 8.631,18.560 8.413,19.414 C8.198,20.256 8.008,21.110 7.695,21.884 C7.176,23.165 6.517,24.403 5.652,25.405 C5.077,26.072 5.199,25.806 5.026,25.770 C4.894,25.743 4.883,25.613 4.857,25.425 C4.716,24.407 4.812,23.230 4.864,22.086 C4.924,20.782 5.198,19.698 5.453,18.615 C5.937,16.552 6.399,14.528 6.888,12.451 C6.920,12.313 7.008,12.085 6.978,12.006 C6.756,11.429 6.612,10.911 6.549,10.306 C6.476,9.610 6.532,8.961 6.688,8.362 C6.965,7.304 7.601,6.367 8.582,6.024 C9.206,5.808 9.897,5.906 10.317,6.156 C10.749,6.415 11.046,6.823 11.184,7.402 C11.332,8.017 11.223,8.753 11.104,9.293 C10.837,10.512 10.486,11.427 10.167,12.603 C10.009,13.186 9.830,13.785 9.978,14.415 C10.114,14.993 10.415,15.391 10.825,15.690 C11.251,16.000 11.755,16.169 12.450,16.145 C13.678,16.102 14.531,15.317 15.101,14.577 C16.014,13.392 16.566,11.793 16.776,9.891 C16.843,9.277 16.893,8.572 16.846,7.877 C16.758,6.593 16.357,5.560 15.719,4.760 C15.113,3.998 14.253,3.391 13.207,3.049 C12.170,2.711 10.735,2.598 9.460,2.816 C7.142,3.213 5.508,4.530 4.545,6.349 C4.041,7.301 3.708,8.396 3.708,9.759 C3.708,10.810 3.967,11.624 4.386,12.259 C4.519,12.460 4.714,12.626 4.844,12.856 C5.029,13.182 4.816,13.667 4.725,14.020 C4.615,14.445 4.603,15.032 4.107,15.042 C3.901,15.046 3.643,14.896 3.469,14.799 C2.164,14.078 1.372,12.766 1.047,11.065 C0.849,10.031 0.850,8.826 1.047,7.827 C1.237,6.860 1.591,5.969 1.984,5.246 C2.798,3.743 3.991,2.541 5.443,1.683 C6.559,1.023 7.818,0.560 9.350,0.337 C9.858,0.263 10.384,0.232 10.955,0.206 C12.623,0.127 14.139,0.505 15.281,1.015 C16.486,1.554 17.448,2.271 18.261,3.161 C19.099,4.076 19.709,5.140 20.095,6.470 C20.297,7.162 20.493,7.902 20.493,8.757 C20.493,9.615 20.312,10.370 20.185,11.125 C19.711,13.953 18.366,16.266 16.347,17.583 C15.858,17.902 15.266,18.196 14.593,18.392 C13.926,18.586 13.165,18.732 12.350,18.675 C11.559,18.621 10.911,18.406 10.367,18.098 C9.827,17.793 9.373,17.419 9.051,16.854 Z"/>
+								</svg>
+							</a>
+							<a class="gallery-our-team__link" href="https://www.instagram.com/">
+								<svg class="gallery-our-team__social">
+									<path fill-rule="evenodd" 
+										d="M22.700,25.800 L3.500,25.800 C1.733,25.800 0.300,24.367 0.300,22.600 L0.300,3.400 C0.300,1.632 1.733,0.200 3.500,0.200 L22.700,0.200 C24.467,0.200 25.900,1.632 25.900,3.400 L25.900,22.600 C25.900,24.367 24.467,25.800 22.700,25.800 ZM13.100,8.039 C11.104,8.039 9.389,9.221 8.602,10.919 L8.597,10.919 C8.589,10.937 8.583,10.956 8.575,10.974 C8.528,11.079 8.487,11.187 8.447,11.296 C8.428,11.348 8.407,11.399 8.390,11.451 C8.353,11.563 8.323,11.676 8.295,11.791 C8.281,11.845 8.265,11.897 8.253,11.951 C8.227,12.072 8.209,12.195 8.192,12.319 C8.185,12.369 8.175,12.418 8.169,12.469 C8.151,12.643 8.140,12.820 8.140,13.000 C8.140,15.739 10.361,17.959 13.100,17.959 C15.839,17.959 18.060,15.739 18.060,13.000 C18.060,12.820 18.049,12.643 18.031,12.469 C18.025,12.418 18.015,12.369 18.008,12.319 C17.991,12.195 17.973,12.072 17.947,11.951 C17.935,11.897 17.919,11.845 17.905,11.791 C17.877,11.676 17.847,11.563 17.810,11.451 C17.793,11.399 17.772,11.348 17.753,11.296 C17.713,11.187 17.672,11.079 17.625,10.974 C17.617,10.956 17.611,10.937 17.603,10.919 L17.598,10.919 C16.811,9.221 15.096,8.039 13.100,8.039 ZM23.020,4.359 C23.020,3.652 22.447,3.080 21.740,3.080 L19.180,3.080 C18.473,3.080 17.900,3.652 17.900,4.359 L17.900,6.920 C17.900,7.627 18.473,8.200 19.180,8.200 L21.740,8.200 C22.447,8.200 23.020,7.627 23.020,6.920 L23.020,4.359 ZM23.020,10.919 L20.660,10.919 C20.842,11.582 20.940,12.280 20.940,13.000 C20.940,17.330 17.430,20.839 13.100,20.839 C8.770,20.839 5.260,17.330 5.260,13.000 C5.260,12.280 5.358,11.582 5.540,10.919 L3.180,10.919 L3.180,21.639 C3.180,22.347 3.753,22.920 4.460,22.920 L21.740,22.920 C22.447,22.920 23.020,22.347 23.020,21.639 L23.020,10.919 Z"/>
+								</svg>
+							</a>
+						</div>
+					</div>
+					<p class="gallery-our-team__name">Георгій Широбоков</p>
+					<p class="gallery-our-team__function">Front End Junior</p>
+				</li>
+				<li class="gallery-our-team__item">
+					<div class="gallery-our-team__image-wrap">
+						<img class="gallery-our-team__img" src="img/our-team-img-3.jpg" alt="photo">
+						<div class="gallery-our-team__links">
+							<a class="gallery-our-team__link" href="https://www.facebook.com/">
+								<svg class="gallery-our-team__social gallery-our-team__social--fb">
+									<path fill-rule="evenodd" 
+ 										d="M12.089,0.199 C12.089,1.675 12.089,4.320 12.089,4.320 C12.089,4.320 9.052,4.017 8.291,5.181 C7.875,5.817 8.122,7.681 8.085,9.019 C9.411,9.019 10.788,9.019 12.114,9.019 C11.774,10.583 11.530,11.643 11.279,12.997 C10.132,12.997 8.063,12.997 8.063,12.997 L8.063,25.801 C8.063,25.801 4.266,25.801 2.481,25.801 C2.482,21.854 2.480,17.249 2.481,13.047 C1.614,13.047 0.973,13.047 0.106,13.047 C0.106,11.572 0.106,10.496 0.106,9.019 C0.947,9.019 1.613,9.019 2.455,9.019 C2.575,6.073 2.620,3.155 4.084,1.669 C5.728,-0.002 7.297,0.199 12.089,0.199 Z"/>
+								</svg>
+							</a>
+							<a class="gallery-our-team__link" href="https://twitter.com/">
+								<svg class="gallery-our-team__social">
+									<path fill-rule="evenodd"
+ 										d="M17.513,0.601 C19.547,0.565 20.630,1.306 21.664,2.249 C22.542,2.173 23.683,1.683 24.355,1.341 C24.572,1.223 24.790,1.103 25.008,0.984 C24.624,2.021 24.104,2.833 23.304,3.450 C23.126,3.586 22.950,3.771 22.727,3.858 C22.727,3.862 22.727,3.867 22.727,3.871 C23.867,3.860 24.807,3.345 25.700,3.066 C25.700,3.070 25.700,3.075 25.700,3.079 C25.231,3.824 24.596,4.581 23.919,5.123 C23.646,5.340 23.372,5.557 23.099,5.774 C23.114,6.981 23.081,8.133 22.856,9.147 C21.544,15.042 18.068,19.045 12.567,20.759 C10.591,21.374 7.399,21.627 5.135,21.065 C4.013,20.787 2.999,20.472 2.048,20.057 C1.519,19.825 1.029,19.575 0.561,19.290 C0.407,19.196 0.254,19.102 0.100,19.009 C0.610,19.024 1.208,19.165 1.778,19.073 C2.295,18.989 2.801,19.011 3.278,18.907 C4.466,18.646 5.521,18.301 6.429,17.770 C6.870,17.511 7.539,17.209 7.852,16.837 C7.262,16.848 6.727,16.710 6.289,16.556 C4.590,15.956 3.601,14.853 2.957,13.196 C3.472,13.253 4.955,13.387 5.302,13.094 C4.654,13.058 4.031,12.683 3.585,12.405 C2.218,11.549 1.104,10.115 1.112,7.908 C1.292,7.993 1.471,8.078 1.650,8.163 C1.994,8.308 2.343,8.385 2.752,8.470 C2.925,8.506 3.271,8.607 3.470,8.533 C3.461,8.533 3.453,8.533 3.444,8.533 C3.180,8.226 2.749,8.021 2.483,7.690 C1.606,6.601 0.785,4.924 1.304,2.926 C1.436,2.419 1.645,1.972 1.868,1.559 C1.877,1.563 1.885,1.567 1.894,1.571 C1.996,1.785 2.224,1.942 2.368,2.121 C2.816,2.676 3.368,3.175 3.931,3.615 C5.849,5.116 7.576,6.037 10.350,6.719 C11.054,6.893 11.867,7.025 12.708,7.026 C12.472,6.339 12.548,5.226 12.733,4.561 C13.201,2.887 14.216,1.682 15.706,1.036 C16.062,0.881 16.457,0.768 16.872,0.677 C17.086,0.652 17.299,0.626 17.513,0.601 Z"/>
+								</svg>
+							</a>
+							<a class="gallery-our-team__link" href="https://www.pinterest.com/">
+								<svg class="gallery-our-team__social">
+									<path fill-rule="evenodd"
+										d="M9.051,16.854 C8.842,17.687 8.631,18.560 8.413,19.414 C8.198,20.256 8.008,21.110 7.695,21.884 C7.176,23.165 6.517,24.403 5.652,25.405 C5.077,26.072 5.199,25.806 5.026,25.770 C4.894,25.743 4.883,25.613 4.857,25.425 C4.716,24.407 4.812,23.230 4.864,22.086 C4.924,20.782 5.198,19.698 5.453,18.615 C5.937,16.552 6.399,14.528 6.888,12.451 C6.920,12.313 7.008,12.085 6.978,12.006 C6.756,11.429 6.612,10.911 6.549,10.306 C6.476,9.610 6.532,8.961 6.688,8.362 C6.965,7.304 7.601,6.367 8.582,6.024 C9.206,5.808 9.897,5.906 10.317,6.156 C10.749,6.415 11.046,6.823 11.184,7.402 C11.332,8.017 11.223,8.753 11.104,9.293 C10.837,10.512 10.486,11.427 10.167,12.603 C10.009,13.186 9.830,13.785 9.978,14.415 C10.114,14.993 10.415,15.391 10.825,15.690 C11.251,16.000 11.755,16.169 12.450,16.145 C13.678,16.102 14.531,15.317 15.101,14.577 C16.014,13.392 16.566,11.793 16.776,9.891 C16.843,9.277 16.893,8.572 16.846,7.877 C16.758,6.593 16.357,5.560 15.719,4.760 C15.113,3.998 14.253,3.391 13.207,3.049 C12.170,2.711 10.735,2.598 9.460,2.816 C7.142,3.213 5.508,4.530 4.545,6.349 C4.041,7.301 3.708,8.396 3.708,9.759 C3.708,10.810 3.967,11.624 4.386,12.259 C4.519,12.460 4.714,12.626 4.844,12.856 C5.029,13.182 4.816,13.667 4.725,14.020 C4.615,14.445 4.603,15.032 4.107,15.042 C3.901,15.046 3.643,14.896 3.469,14.799 C2.164,14.078 1.372,12.766 1.047,11.065 C0.849,10.031 0.850,8.826 1.047,7.827 C1.237,6.860 1.591,5.969 1.984,5.246 C2.798,3.743 3.991,2.541 5.443,1.683 C6.559,1.023 7.818,0.560 9.350,0.337 C9.858,0.263 10.384,0.232 10.955,0.206 C12.623,0.127 14.139,0.505 15.281,1.015 C16.486,1.554 17.448,2.271 18.261,3.161 C19.099,4.076 19.709,5.140 20.095,6.470 C20.297,7.162 20.493,7.902 20.493,8.757 C20.493,9.615 20.312,10.370 20.185,11.125 C19.711,13.953 18.366,16.266 16.347,17.583 C15.858,17.902 15.266,18.196 14.593,18.392 C13.926,18.586 13.165,18.732 12.350,18.675 C11.559,18.621 10.911,18.406 10.367,18.098 C9.827,17.793 9.373,17.419 9.051,16.854 Z"/>
+								</svg>
+							</a>
+							<a class="gallery-our-team__link" href="https://www.instagram.com/">
+								<svg class="gallery-our-team__social">
+									<path fill-rule="evenodd" 
+										d="M22.700,25.800 L3.500,25.800 C1.733,25.800 0.300,24.367 0.300,22.600 L0.300,3.400 C0.300,1.632 1.733,0.200 3.500,0.200 L22.700,0.200 C24.467,0.200 25.900,1.632 25.900,3.400 L25.900,22.600 C25.900,24.367 24.467,25.800 22.700,25.800 ZM13.100,8.039 C11.104,8.039 9.389,9.221 8.602,10.919 L8.597,10.919 C8.589,10.937 8.583,10.956 8.575,10.974 C8.528,11.079 8.487,11.187 8.447,11.296 C8.428,11.348 8.407,11.399 8.390,11.451 C8.353,11.563 8.323,11.676 8.295,11.791 C8.281,11.845 8.265,11.897 8.253,11.951 C8.227,12.072 8.209,12.195 8.192,12.319 C8.185,12.369 8.175,12.418 8.169,12.469 C8.151,12.643 8.140,12.820 8.140,13.000 C8.140,15.739 10.361,17.959 13.100,17.959 C15.839,17.959 18.060,15.739 18.060,13.000 C18.060,12.820 18.049,12.643 18.031,12.469 C18.025,12.418 18.015,12.369 18.008,12.319 C17.991,12.195 17.973,12.072 17.947,11.951 C17.935,11.897 17.919,11.845 17.905,11.791 C17.877,11.676 17.847,11.563 17.810,11.451 C17.793,11.399 17.772,11.348 17.753,11.296 C17.713,11.187 17.672,11.079 17.625,10.974 C17.617,10.956 17.611,10.937 17.603,10.919 L17.598,10.919 C16.811,9.221 15.096,8.039 13.100,8.039 ZM23.020,4.359 C23.020,3.652 22.447,3.080 21.740,3.080 L19.180,3.080 C18.473,3.080 17.900,3.652 17.900,4.359 L17.900,6.920 C17.900,7.627 18.473,8.200 19.180,8.200 L21.740,8.200 C22.447,8.200 23.020,7.627 23.020,6.920 L23.020,4.359 ZM23.020,10.919 L20.660,10.919 C20.842,11.582 20.940,12.280 20.940,13.000 C20.940,17.330 17.430,20.839 13.100,20.839 C8.770,20.839 5.260,17.330 5.260,13.000 C5.260,12.280 5.358,11.582 5.540,10.919 L3.180,10.919 L3.180,21.639 C3.180,22.347 3.753,22.920 4.460,22.920 L21.740,22.920 C22.447,22.920 23.020,22.347 23.020,21.639 L23.020,10.919 Z"/>
+								</svg>
+							</a>
+						</div>
+					</div>
+					<p class="gallery-our-team__name">Олександр Коваленко </p>
+					<p class="gallery-our-team__function">Front End Guru</p>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section class="section section--logos">
+		<h2 class="visually-hidden">logotypes</h2>
+		<!-- <p>Нам Довіряють:</p> -->
+		<div class="logos">
+			<img src="img/logos.png" alt="logotypes">
+		</div>
+	</section>
+	<section class="section section--work" id="work">
+		<h2 class="title">What we do</h2>
+		<p class="sub-title">some of our work</p>
+		<p class="text text--work">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		<ul class="gallery-work">
+			<li class="gallery-work__item">
+				<img src="img/work-img-1.jpg" alt="photo" class="gallery-our-team__image">
+				<div class="gallery-work__text-wrap">
+					<a class="gallery-work__link" href="#">creatively designed</a>
+					<p class="gallery-work__text">Lorem ipsum dolor sit</p>
+				</div>
+			</li>
+			<li class="gallery-work__item">
+				<img src="img/work-img-2.jpg" alt="photo" class="gallery-our-team__image">
+				<div class="gallery-work__text-wrap">
+					<a class="gallery-work__link" href="#">creatively designed</a>
+					<p class="gallery-work__text">Lorem ipsum dolor sit</p>
+				</div>
+			</li>
+			<li class="gallery-work__item">
+				<img src="img/work-img-3.jpg" alt="photo" class="gallery-our-team__image">
+				<div class="gallery-work__text-wrap">
+					<a class="gallery-work__link" href="#">creatively designed</a>
+					<p class="gallery-work__text">Lorem ipsum dolor sit</p>
+				</div>
+			</li>
+			<li class="gallery-work__item">
+				<img src="img/work-img-4.jpg" alt="photo" class="gallery-our-team__image">
+				<div class="gallery-work__text-wrap">
+					<a class="gallery-work__link" href="#">creatively designed</a>
+					<p class="gallery-work__text">Lorem ipsum dolor sit</p>
+				</div>
+			</li>
+			<li class="gallery-work__item">
+				<img src="img/work-img-5.jpg" alt="photo" class="gallery-our-team__image">
+				<div class="gallery-work__text-wrap">
+					<a class="gallery-work__link" href="#">creatively designed</a>
+					<p class="gallery-work__text">Lorem ipsum dolor sit</p>
+				</div>
+			</li>
+			<li class="gallery-work__item">
+				<img src="img/work-img-6.jpg" alt="photo" class="gallery-our-team__image">
+				<div class="gallery-work__text-wrap">
+					<a class="gallery-work__link" href="#">creatively designed</a>
+					<p class="gallery-work__text">Lorem ipsum dolor sit</p>
+				</div>
+			</li>
+			<li class="gallery-work__item">
+				<img src="img/work-img-7.jpg" alt="photo" class="gallery-our-team__image">
+				<div class="gallery-work__text-wrap">
+					<a class="gallery-work__link" href="#">creatively designed</a>
+					<p class="gallery-work__text">Lorem ipsum dolor sit</p>
+				</div>
+			</li>
+		</ul>
+	</section>
+	<div class="map" id="map"></div>
+	<section class="section section--contact" id="contact">
+		<h2 class="visually-hidden">contact</h2>
+		<div class="section__contact-wrap">
+			<article class="about">
+				<h2 class="visually-hidden">about</h2>
+				<p class="main-logo main-logo--about">
+					<a class="main-logo__link" href="#">BeetRoot</a>
+				</p>
+				<p class="about__text">
+					<iframe width="400" height="250" src="https://www.youtube.com/embed/t_6DYQPHcDk?si=a906yTsHNIi698oi" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				</p>
+				<div class="followers">
+					<p class="followers__quantity">
+						<span>1m</span> followers
+					</p>
+					<ul class="followers__list">
+						<li class="followers__item"><p>Follow Us:</p></li>
+						<li class="followers__item">
+							<a href="https://www.facebook.com/" class="followers__link">
+								<svg width="8px" height="16px" class="followers__svg">
+									<path
+									d="M7.993,0.014 C7.993,0.937 7.993,2.589 7.993,2.589 C7.993,2.589 6.095,2.400 5.619,3.128 C5.359,3.526 5.514,4.690 5.491,5.526 C6.319,5.526 7.180,5.526 8.009,5.526 C7.796,6.505 7.644,7.166 7.487,8.013 C6.770,8.013 5.477,8.013 5.477,8.013 L5.477,16.015 C5.477,16.015 3.104,16.015 1.988,16.015 C1.989,13.548 1.987,10.670 1.988,8.045 C1.446,8.045 1.045,8.045 0.504,8.045 C0.504,7.121 0.504,6.450 0.504,5.526 C1.029,5.526 1.446,5.526 1.972,5.526 C2.047,3.685 2.075,1.861 2.990,0.933 C4.018,-0.112 4.998,0.014 7.993,0.014 Z"/>
+								</svg>
+							</a>
+						</li>
+						<li class="followers__item">
+							<a href="https://twitter.com/" class="followers__link">
+								<svg width="16px" height="14px" class="followers__svg">
+									<path
+									d="M10.883,0.515 C12.154,0.493 12.831,0.956 13.477,1.545 C14.026,1.498 14.739,1.191 15.159,0.978 C15.295,0.903 15.431,0.829 15.568,0.754 C15.328,1.403 15.002,1.910 14.502,2.295 C14.392,2.381 14.281,2.497 14.142,2.551 C14.142,2.554 14.142,2.556 14.142,2.559 C14.854,2.551 15.442,2.230 16.000,2.056 C16.000,2.059 16.000,2.061 16.000,2.064 C15.707,2.530 15.310,3.003 14.887,3.341 C14.716,3.477 14.545,3.613 14.374,3.748 C14.384,4.503 14.363,5.222 14.222,5.856 C13.402,9.541 11.230,12.042 7.792,13.113 C6.557,13.499 4.562,13.657 3.147,13.306 C2.446,13.131 1.812,12.935 1.217,12.675 C0.887,12.530 0.581,12.374 0.288,12.196 C0.192,12.137 0.096,12.079 -0.000,12.019 C0.319,12.029 0.692,12.117 1.049,12.060 C1.372,12.008 1.688,12.021 1.986,11.956 C2.728,11.793 3.388,11.578 3.956,11.245 C4.231,11.084 4.649,10.896 4.845,10.663 C4.476,10.669 4.142,10.584 3.868,10.487 C2.806,10.112 2.188,9.423 1.786,8.388 C2.108,8.423 3.034,8.507 3.251,8.324 C2.846,8.301 2.457,8.067 2.178,7.892 C1.324,7.358 0.627,6.461 0.633,5.082 C0.745,5.135 0.857,5.188 0.969,5.242 C1.183,5.332 1.402,5.380 1.658,5.433 C1.766,5.456 1.982,5.519 2.106,5.473 C2.101,5.473 2.095,5.473 2.090,5.473 C1.925,5.281 1.655,5.153 1.489,4.946 C0.941,4.265 0.428,3.217 0.753,1.968 C0.835,1.651 0.966,1.372 1.105,1.114 C1.110,1.116 1.116,1.119 1.121,1.122 C1.185,1.255 1.327,1.353 1.417,1.465 C1.697,1.812 2.043,2.124 2.394,2.399 C3.593,3.336 4.673,3.913 6.406,4.340 C6.846,4.448 7.355,4.530 7.880,4.531 C7.732,4.101 7.780,3.406 7.896,2.990 C8.188,1.944 8.823,1.190 9.754,0.787 C9.976,0.690 10.223,0.620 10.482,0.563 C10.616,0.547 10.749,0.531 10.883,0.515 Z"/>
+								</svg>
+							</a>
+						</li>
+						<li class="followers__item">
+							<a href="https://www.instagram.com/" class="followers__link">
+								<svg width="16px" height="16px" class="followers__svg">
+									<path
+									d="M14.000,16.014 L2.000,16.014 C0.895,16.014 -0.000,15.119 -0.000,14.014 L-0.000,2.014 C-0.000,0.909 0.895,0.014 2.000,0.014 L14.000,0.014 C15.105,0.014 16.000,0.909 16.000,2.014 L16.000,14.014 C16.000,15.119 15.105,16.014 14.000,16.014 ZM8.000,4.914 C6.753,4.914 5.680,5.653 5.189,6.714 L5.186,6.714 C5.181,6.725 5.177,6.737 5.172,6.749 C5.143,6.813 5.117,6.882 5.092,6.950 C5.080,6.982 5.067,7.013 5.056,7.047 C5.033,7.116 5.014,7.187 4.997,7.259 C4.988,7.292 4.978,7.325 4.971,7.359 C4.954,7.435 4.943,7.511 4.933,7.589 C4.928,7.620 4.922,7.651 4.918,7.683 C4.907,7.792 4.900,7.902 4.900,8.014 C4.900,9.727 6.288,11.114 8.000,11.114 C9.712,11.114 11.100,9.727 11.100,8.014 C11.100,7.902 11.093,7.792 11.082,7.683 C11.078,7.651 11.072,7.620 11.067,7.589 C11.057,7.511 11.045,7.435 11.029,7.359 C11.022,7.325 11.012,7.292 11.003,7.259 C10.985,7.187 10.967,7.116 10.944,7.047 C10.933,7.013 10.920,6.982 10.908,6.950 C10.883,6.882 10.857,6.813 10.828,6.749 C10.823,6.737 10.819,6.725 10.814,6.714 L10.811,6.714 C10.319,5.653 9.247,4.914 8.000,4.914 ZM14.200,2.615 C14.200,2.172 13.842,1.815 13.400,1.815 L11.800,1.815 C11.358,1.815 11.000,2.172 11.000,2.615 L11.000,4.214 C11.000,4.656 11.358,5.014 11.800,5.014 L13.400,5.014 C13.842,5.014 14.200,4.656 14.200,4.214 L14.200,2.615 ZM14.200,6.714 L12.725,6.714 C12.839,7.128 12.900,7.564 12.900,8.014 C12.900,10.720 10.706,12.914 8.000,12.914 C5.294,12.914 3.100,10.720 3.100,8.014 C3.100,7.564 3.161,7.128 3.275,6.714 L1.800,6.714 L1.800,13.415 C1.800,13.856 2.158,14.214 2.600,14.214 L13.400,14.214 C13.842,14.214 14.200,13.856 14.200,13.415 L14.200,6.714 Z"/>
+								</svg>
+							</a>
+						</li>
+						<li class="followers__item">
+							<a href="https://www.pinterest.com/" class="followers__link">
+								<svg width="13px" height="17px" class="followers__svg">
+									<path
+										d="M5.844,10.423 C5.713,10.944 5.582,11.490 5.446,12.024 C5.311,12.549 5.193,13.083 4.997,13.566 C4.673,14.367 4.260,15.142 3.720,15.767 C3.361,16.185 3.437,16.018 3.329,15.996 C3.246,15.979 3.239,15.898 3.223,15.781 C3.135,15.144 3.195,14.408 3.228,13.693 C3.265,12.878 3.436,12.201 3.595,11.524 C3.898,10.234 4.187,8.970 4.492,7.672 C4.513,7.585 4.567,7.443 4.549,7.394 C4.410,7.033 4.320,6.709 4.281,6.331 C4.235,5.896 4.270,5.490 4.368,5.116 C4.540,4.455 4.938,3.869 5.552,3.655 C5.941,3.519 6.373,3.581 6.635,3.737 C6.906,3.898 7.091,4.154 7.177,4.515 C7.270,4.900 7.202,5.360 7.128,5.698 C6.961,6.459 6.741,7.031 6.542,7.766 C6.443,8.131 6.331,8.505 6.424,8.898 C6.509,9.260 6.697,9.509 6.953,9.695 C7.219,9.889 7.534,9.995 7.969,9.981 C8.736,9.953 9.269,9.463 9.626,9.000 C10.196,8.260 10.541,7.260 10.673,6.071 C10.715,5.688 10.746,5.247 10.716,4.812 C10.662,4.010 10.410,3.365 10.012,2.864 C9.633,2.388 9.096,2.008 8.442,1.795 C7.794,1.584 6.897,1.514 6.100,1.650 C4.652,1.898 3.630,2.721 3.028,3.857 C2.713,4.453 2.505,5.137 2.505,5.989 C2.505,6.646 2.667,7.155 2.929,7.551 C3.012,7.677 3.134,7.780 3.215,7.925 C3.331,8.128 3.197,8.432 3.140,8.652 C3.072,8.918 3.064,9.285 2.754,9.291 C2.626,9.293 2.464,9.199 2.356,9.139 C1.540,8.688 1.045,7.868 0.842,6.806 C0.718,6.159 0.719,5.405 0.842,4.780 C0.961,4.177 1.182,3.620 1.427,3.168 C1.936,2.228 2.682,1.478 3.589,0.942 C4.287,0.529 5.074,0.239 6.031,0.101 C6.349,0.054 6.678,0.035 7.034,0.017 C8.077,-0.031 9.025,0.205 9.738,0.524 C10.491,0.861 11.092,1.309 11.601,1.865 C12.124,2.437 12.505,3.102 12.747,3.933 C12.873,4.366 12.996,4.829 12.996,5.363 C12.996,5.899 12.882,6.371 12.803,6.843 C12.507,8.611 11.666,10.056 10.405,10.879 C10.099,11.079 9.728,11.262 9.308,11.385 C8.891,11.506 8.416,11.597 7.906,11.561 C7.412,11.527 7.007,11.393 6.667,11.201 C6.329,11.010 6.045,10.777 5.844,10.423 Z"/>
+								</svg>
+							</a>
+						</li>
+						<li class="followers__item">
+							<a href="https://plus.google.com/" class="followers__link">
+								<svg width="16px" height="14px" class="followers__svg">
+									<path
+									d="M13.500,3.716 L13.500,6.156 L12.500,6.156 L12.500,3.716 L10.000,3.716 L10.000,2.719 L12.500,2.719 L12.500,0.279 L13.500,0.279 L13.500,2.719 L16.000,2.719 L16.000,3.716 L13.500,3.716 ZM6.585,1.245 C7.473,1.736 7.993,2.533 7.993,3.576 C7.993,4.452 7.452,5.143 6.754,5.678 C6.073,6.201 5.944,6.420 5.944,6.864 C5.944,7.243 6.673,7.888 7.055,8.153 C8.169,8.928 8.499,9.646 8.499,10.846 C8.499,12.343 7.055,14.015 4.383,14.015 C2.039,14.015 -0.000,12.895 -0.000,11.397 C-0.000,9.878 1.866,8.411 4.209,8.411 C4.465,8.411 4.699,8.400 4.941,8.400 C4.620,8.094 4.367,7.713 4.367,7.249 C4.367,6.975 4.456,6.699 4.580,6.464 C4.453,6.473 4.323,6.452 4.189,6.452 C2.265,6.452 0.975,5.061 0.975,3.395 C0.975,1.764 2.756,0.263 4.648,0.263 C5.703,0.263 8.868,0.263 8.868,0.263 L7.923,1.245 L6.585,1.245 ZM4.656,8.798 C3.036,8.782 1.585,9.769 1.585,10.954 C1.585,12.164 2.755,13.048 4.374,13.048 C6.651,13.048 7.445,12.225 7.445,11.016 C7.445,10.870 7.427,10.727 7.393,10.588 C7.215,9.904 6.585,9.565 5.705,8.964 C5.386,8.862 5.034,8.803 4.656,8.798 ZM6.476,3.595 C6.287,2.193 5.207,1.067 4.120,1.037 C3.033,1.005 2.304,2.077 2.492,3.479 C2.680,4.882 3.713,6.045 4.800,6.076 C5.887,6.108 6.663,4.998 6.476,3.595 Z"/>
+								</svg>
+							</a>
+						</li>
+						<li class="followers__item">
+							<a href="https://www.youtube.com/" class="followers__link">
+								<svg width="16px" height="12px" class="followers__svg">
+									<path
+									d="M13.537,0.522 L8.312,0.517 L2.883,0.522 C1.525,0.522 -0.000,1.429 -0.000,2.758 L-0.000,9.377 C-0.000,10.706 1.525,11.516 2.883,11.516 L8.415,11.516 L13.537,11.516 C14.896,11.516 15.996,10.706 15.996,9.377 L15.996,2.758 C15.996,1.429 14.896,0.522 13.537,0.522 ZM6.964,8.565 L6.932,3.525 L10.440,6.067 L6.964,8.565 Z"/>
+								</svg>
+							</a>
+						</li>
+						<li class="followers__item">
+							<a href="https://dribbble.com/" class="followers__link">
+								<svg width="16px" height="16px" class="followers__svg">
+									<path
+									d="M15.837,6.404 C15.733,5.890 15.575,5.383 15.371,4.900 C15.171,4.425 14.922,3.968 14.633,3.541 C14.347,3.117 14.019,2.719 13.657,2.358 C13.295,1.995 12.897,1.667 12.473,1.381 C12.046,1.091 11.588,0.844 11.114,0.643 C10.631,0.439 10.125,0.281 9.611,0.177 C9.084,0.068 8.542,0.014 8.000,0.014 C7.458,0.014 6.916,0.068 6.389,0.177 C5.875,0.281 5.369,0.439 4.885,0.643 C4.411,0.844 3.954,1.091 3.526,1.381 C3.103,1.667 2.704,1.995 2.343,2.358 C1.981,2.719 1.653,3.117 1.367,3.541 C1.078,3.968 0.829,4.425 0.629,4.900 C0.424,5.383 0.267,5.890 0.162,6.404 C0.054,6.929 -0.000,7.472 -0.000,8.013 C-0.000,8.556 0.054,9.099 0.162,9.625 C0.267,10.139 0.424,10.646 0.629,11.129 C0.829,11.603 1.078,12.061 1.367,12.488 C1.653,12.912 1.981,13.310 2.343,13.672 C2.704,14.034 3.103,14.361 3.526,14.648 C3.954,14.937 4.411,15.185 4.885,15.386 C5.369,15.590 5.875,15.746 6.389,15.851 C6.916,15.960 7.458,16.015 8.000,16.015 C8.542,16.015 9.084,15.960 9.611,15.851 C10.125,15.746 10.631,15.590 11.114,15.386 C11.588,15.185 12.046,14.937 12.473,14.648 C12.897,14.361 13.295,14.034 13.657,13.672 C14.019,13.310 14.347,12.912 14.633,12.488 C14.922,12.061 15.171,11.603 15.371,11.129 C15.575,10.646 15.733,10.139 15.837,9.625 C15.946,9.099 16.000,8.556 16.000,8.013 C16.000,7.472 15.946,6.929 15.837,6.404 ZM14.830,7.946 C14.731,7.925 12.419,7.427 10.071,7.722 C10.023,7.605 9.975,7.488 9.924,7.369 C9.782,7.035 9.629,6.704 9.470,6.378 C12.168,5.277 13.264,3.693 13.277,3.674 C14.235,4.838 14.814,6.325 14.830,7.946 ZM12.513,2.887 C12.496,2.913 11.523,4.394 8.944,5.361 C7.776,3.215 6.493,1.509 6.390,1.375 C6.906,1.249 7.445,1.182 8.000,1.182 C9.730,1.182 11.309,1.827 12.513,2.887 ZM6.364,1.380 C6.363,1.381 6.362,1.381 6.362,1.381 C6.362,1.381 6.355,1.384 6.342,1.386 C6.349,1.384 6.356,1.383 6.364,1.380 ZM5.085,1.835 C5.176,1.956 6.439,3.670 7.622,5.772 C4.341,6.643 1.494,6.609 1.314,6.606 C1.758,4.490 3.179,2.735 5.085,1.835 ZM1.168,8.013 C1.168,7.941 1.171,7.869 1.173,7.798 C1.294,7.801 4.670,7.877 8.188,6.825 C8.384,7.207 8.571,7.597 8.742,7.986 C8.652,8.011 8.562,8.039 8.473,8.068 C4.786,9.259 2.916,12.577 2.916,12.577 C2.916,12.577 2.918,12.578 2.918,12.580 C1.830,11.369 1.168,9.769 1.168,8.013 ZM8.000,14.847 C6.346,14.847 4.830,14.259 3.648,13.281 C3.738,13.354 3.801,13.401 3.801,13.401 C3.801,13.401 5.111,10.544 9.163,9.132 C9.178,9.127 9.193,9.123 9.208,9.118 C10.169,11.616 10.566,13.708 10.667,14.306 C9.848,14.654 8.946,14.847 8.000,14.847 ZM11.818,13.681 C11.748,13.268 11.384,11.264 10.488,8.801 C12.694,8.448 14.605,9.052 14.746,9.099 C14.442,11.003 13.352,12.645 11.818,13.681 Z"/>
+								</svg>
+							</a>
+						</li>
+						<li class="followers__item">
+							<a href="https://www.tumblr.com/" class="followers__link">
+								<svg width="10px" height="17px" class="followers__svg">
+									<path
+									d="M10.009,15.145 C9.329,15.465 8.712,15.693 8.160,15.822 C7.608,15.952 7.012,16.017 6.371,16.017 C5.642,16.017 5.213,15.925 4.653,15.741 C4.094,15.556 3.617,15.291 3.222,14.951 C2.826,14.608 2.553,14.243 2.399,13.859 C2.247,13.473 2.171,12.916 2.171,12.182 L2.171,6.568 L0.007,6.568 L0.007,4.301 C0.633,4.097 1.358,3.804 1.803,3.423 C2.251,3.041 2.608,2.583 2.878,2.047 C3.148,1.514 3.335,0.834 3.436,0.007 L5.701,0.007 L5.701,3.711 L9.383,3.711 L9.383,6.568 L5.701,6.568 L5.701,10.673 C5.701,11.602 5.689,12.137 5.787,12.400 C5.884,12.662 6.128,12.934 6.394,13.091 C6.747,13.304 7.149,13.410 7.603,13.410 C8.409,13.410 9.211,13.146 10.009,12.620 L10.009,15.145 Z"/>
+								</svg>
+							</a>
+						</li>
+					</ul>
+					<form class="followers__form" action="#">
+						<input class="followers__input" type="email" placeholder="Your Email...">
+						<button class="followers__button" type="submit">Subscribe</button>
+					</form>
+				</div>
+			</article>
+			<article class="blog">
+				<h3 class="blog__title">Blogs</h3>
+				<ul class="blog__list">
+					<li class="blog__item">
+						<a href="https://beetroot.academy/courses/online/front-end" class="blog__link">
+							<div class="blog__image-wrap">
+								<img src="img/blog-img-1.jpg" alt="photo">
+							</div>
+							<p class="blog__description">Lorem ipsum dolor sit amet,  consectetur adipiscing 
+								<span class="blog__date">April 10, 2024</span>
+							</p>
+						</a>
+					</li>
+					<li class="blog__item">
+						<a href="https://jobs.dou.ua/companies/beetroot-academy/reviews/" class="blog__link">
+							<div class="blog__image-wrap">
+								<img src="img/blog-img-2.jpg" alt="photo">
+							</div>
+							<p class="blog__description">Consectetur adipiscing elit,  sed do eiusmod tempor 
+								<span class="blog__date">April 10, 2024</span>
+							</p>
+						</a>
+					</li>
+					<li class="blog__item">
+						<a href="https://www.work.ua/jobs-front-end+developer/" class="blog__link">
+							<div class="blog__image-wrap">
+								<img src="img/blog-img-3.jpg" alt="photo">
+							</div>
+							<p class="blog__description">sed do eiusmod tempor  incididunt ut labore 
+								<span class="blog__date">April 10, 2024</span>
+							</p>
+						</a>
+					</li>
+				</ul>
+			</article>
+			<article class="instagram">
+				<h3 class="instagram__title">instagram</h3>
+				<ul class="instagram__list">
+					<li class="instagram__item">
+						<a href="https://www.instagram.com/" class="instagram__link">
+							<img src="img/insta-img-1.jpg" alt="instagram">
+						</a>
+					</li>
+					<li class="instagram__item">
+						<a href="https://www.instagram.com/" class="instagram__link">
+							<img src="img/insta-img-2.jpg" alt="instagram">
+						</a>
+					</li>
+					<li class="instagram__item">
+						<a href="https://www.instagram.com/" class="instagram__link">
+							<img src="img/insta-img-3.jpg" alt="instagram">
+						</a>
+					</li>
+					<li class="instagram__item">
+						<a href="https://www.instagram.com/" class="instagram__link">
+							<img src="img/insta-img-4.jpg" alt="instagram">
+						</a>
+					</li>
+					<li class="instagram__item">
+						<a href="https://www.instagram.com/" class="instagram__link">
+							<img src="img/insta-img-5.jpg" alt="instagram">
+						</a>
+					</li>
+					<li class="instagram__item">
+						<a href="https://www.instagram.com/" class="instagram__link">
+							<img src="img/insta-img-6.jpg" alt="instagram">
+						</a>
+					</li>
+					<li class="instagram__item">
+						<a href="https://www.instagram.com/" class="instagram__link">
+							<img src="img/insta-img-7.jpg" alt="instagram">
+						</a>
+					</li>
+					<li class="instagram__item">
+						<a href="https://www.instagram.com/" class="instagram__link">
+							<img src="img/insta-img-8.jpg" alt="instagram">
+						</a>
+					</li>
+					<li class="instagram__item">
+						<a href="https://www.instagram.com/" class="instagram__link">
+							<img src="img/insta-img-9.jpg" alt="instagram">
+						</a>
+					</li>
+				</ul>
+				<a href="https://www.instagram.com/" class="instagram__link">View more photos</a>
+			</article>
+		</div>
+	</section>
+	<footer class="footer">
+		<p class="footer__copyright">&copy; 2024 BeetRoot by <span>George Shirobokov</span></p>
+	</footer>
+	
+	<script src="js/smooth-scroll.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/hamburger.js"></script>
+	<script src="js/jquery.scrollbar.min.js"></script>
+	<script src="js/accordion.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/slider.js"></script>
+	<script src="js/masonry.pkgd.min.js"></script>
+	<script src="js/gallery-work.js"></script>
+	<script  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjy8psdDjhlsaucK-KnnY3d6mDDOwFJh8&callback=initMap"></script>
+	<script src="js/map.js"></script>
+</body>
+</html>
