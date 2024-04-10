@@ -1,0 +1,117 @@
+/* Подключение шрифта Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+body {
+  /* Фоновое изображение */
+  background-image: url("assets/img/background.jpg");
+  /* Размер фона */
+  background-size: cover;
+  /* Позиционирование фона */
+  background-position: center center;
+  /* Шрифт основного текста */
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  /* Максимальная ширина контейнера */
+  max-width: 960px;
+  /* Отступы слева и справа от контейнера */
+  margin: 0 auto;
+}
+
+.content {
+  /* Анимация появления */
+  animation: fade-in 2s ease-in-out;
+  /* Отступы внутри контента */
+  padding: 20px;
+  /* Цвет фона контента */
+  background-color: #f9f9f9;
+  /* Скругление углов контента */
+  border-radius: 10px;
+  /* Тень контента */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Выравнивание текста по центру */
+  text-align: center;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.photo {
+  /* Ширина фото */
+  width: 300px;
+  /* Высота фото */
+  height: 300px;
+  /* Скругление углов фото */
+  border-radius: 40%;
+  /* Отступы сверху и снизу от фото */
+  margin: 0 auto 10px;
+  /* Рамка вокруг фото */
+  border: 2px solid #ccc;
+  /* Переход при наведении */
+  transition: 0.3s;
+}
+
+.photo:hover {
+  /* Увеличение фото при наведении */
+  width: 400px;
+  /* Увеличение фото при наведении */
+  height: 400px;
+}
+
+h1 {
+  /* Размер текста заголовка */
+  font-size: 32px;
+  /* Отступ снизу от заголовка */
+  margin-bottom: 20px;
+}
+
+.list {
+  /* Убираем маркеры списка */
+  list-style: none;
+  /* Отступы внутри списка */
+  padding: 0;
+  /* Отступы вокруг списка */
+  margin: 0;
+}
+
+.list li {
+  /* Отображение элементов списка как блочных элементов */
+  display: inline-block;
+  /* Отступы между элементами списка */
+  margin: 10px;
+  /* Отступы внутри элементов списка */
+  padding: 10px;
+  /* Скругление углов элементов списка */
+  border-radius: 10px;
+  /* Цвет фона элементов списка */
+  background-color: #f9f9f9;
+  /* Тень элементов списка */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  /* Переход при наведении */
+  transition: 0.3s;
+}
+
+.list li:hover {
+  /* Цвет фона элементов списка при наведении */
+  background-color: #1461c7;
+}
+
+.list li a {
+  /* Убираем подчеркивание ссылок */
+  text-decoration: none;
+  /* Цвет текста ссылок */
+  color: #333;
+  /* Размер текста ссылок */
+  font-size: 16px;
+}
+.list li a:hover {
+  color: #f7f31a; /* белый цвет */
+}
