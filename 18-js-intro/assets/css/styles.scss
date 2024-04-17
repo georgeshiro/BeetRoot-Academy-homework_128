@@ -1,0 +1,29 @@
+@import '_general.scss';
+
+@import 'fonts.scss';
+
+header {
+    background-color: lightblue;
+}
+
+h3 {
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.homework-block {
+    margin-top: 120px;
+}
+
+footer {
+    background-color: lightgrey;
+    height: 60px;
+    h4 {
+        padding: 15px;
+        color: black;
+    }
+}

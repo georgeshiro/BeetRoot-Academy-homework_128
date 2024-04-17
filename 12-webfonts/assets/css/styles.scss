@@ -1,0 +1,161 @@
+// General Settings
+@import '_general.scss';
+
+@import '_fonts.scss';
+
+$primary-text-color:  #000;
+
+body {
+    font-family: 'PT Sans';
+    margin-top: 0;
+    margin-bottom: 90px;
+    background: url('../img/bg-picture.svg') right -100px top 160px no-repeat fixed;
+}
+
+// Web Fonts
+.francois_one {
+    font-family: 'Francois One';
+}
+.farro {
+    font-family: 'Farro';
+}
+.staatliches {
+    font-family: 'Staatliches';
+}
+.tourney {
+    font-family: 'Tourney';
+}
+
+// Header
+.wrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+}
+.navigation {
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        .item-doc {
+            @extend .staatliches;
+            color: $primary-text-color;
+            font-size: 1.375rem;
+            font-weight: 400;
+            letter-spacing: 0.04125rem;
+        }
+    }   
+}
+.item-eng {
+    @extend .tourney;
+    color: $primary-text-color;
+    font-size: 1.375rem;
+    font-weight: 600;
+    line-height: 1.125rem; 
+    letter-spacing: 0.055rem;
+}
+.navigation img {
+    width: 238px;
+    height: 54px;
+}
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: rgba(white, 0.8);
+    z-index: 10;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+    }
+}
+
+// Aside 
+.colums {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    position: relative;
+}
+aside {
+    margin-top: 150px;
+    padding: 10px;
+    width: 385px;
+    position: sticky;
+    top: 80px;
+    li + li {
+        margin-top: 70px;
+    }
+    li a {
+        display: inline-block;
+        width: 100%;
+        text-decoration: none;
+        @extend .francois_one;
+        color: $primary-text-color;
+        font-size: 2.25rem;
+        font-weight: 400;
+        line-height: 3rem; 
+        letter-spacing: 0.09rem;
+        white-space: nowrap;
+        text-transform: uppercase;
+        border-bottom: 1px solid #BDBDBD;
+    }
+}
+
+// Main
+main {
+    margin-top: 70px;
+    width: calc(100% - 385px - 30px);   
+}
+.divider {
+    width: 100px;
+    height: 8px;
+    background-color: $primary-text-color;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+h2 {
+    @extend .francois_one;
+    color: $primary-text-color;
+    font-size: 2.25rem;
+    font-weight: 400;
+    line-height: 3rem;
+    letter-spacing: 0.09rem;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+    sup {
+        @extend .farro;
+        color: $primary-text-color;
+        font-size: 1.1rem;
+        font-weight: 300;
+        letter-spacing: 0.075rem;
+        margin-top: 0;
+        margin-left: 10px;
+        margin-bottom: 28px;
+        text-transform: none;
+    }
+}
+section {
+    padding-top: 80px;
+    p {
+        color: $primary-text-color;
+        font-size: 1.75rem;
+        font-weight: 400;
+        line-height: 3rem;
+        padding-bottom: 40px;
+    }
+    .underline {
+        text-decoration-line: underline;
+    }
+    .bg-color {
+        background-color: #D8D7DA;
+    }
+}

@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1rem;
+    background:  #FFF;
+}
+
+ul, li, a {
+    list-style: none;
+}
+
+a, button {
+    text-decoration: none;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+img {
+    vertical-align: top;
+}
+
+.container {
+    width: min(90%, 1200px);
+    margin: 0 auto;
+}
+
+// НЕ ЗАБУВАТИ!!! 
+// Вказувати мову документу html
+// Додавати тегу <a> target="_blank" rel="noreferrer nofollow", але варто пам"ятати, що target="_blank" використовується тільки для зовнішніх посилань
+// Додавати тегу <button> атрибут type="button/reset/submit/menu"
+// Всі <button> та <input> не успадковують font-family, треба додавати примусово
+// Додавати тегу <form> атрибут методу відправки даних method="get/post". Коли у <form> є password ЗАВЖДИ methot="post"
+// Якщо <input> знаходиться в середині <label>, то зв"язка атрибутів for та id не обов"язкова
+// <section> та <article> ЗАВЖДИ повинні мати заголовок <h1-h6>, інакше - це <div>
+// Шрифти вказуємо завжди тільки в body!!!

@@ -1,16 +1,39 @@
 @font-face {
 	font-family: 'Montserrat';
+	/* Вказує шлях до файлів шрифту */
 	src: url('../fonts/montserrat-regular-webfont.woff') format('woff'),
 		url('../fonts/montserrat-bold-webfont.woff') format('woff');
 }
 
 @font-face {
+	/* Визначає назву шрифту */
 	font-family: 'KaushanScript';
 	src: url('../fonts/kaushanscript-regular-webfont.woff') format('woff');
 }
+/* Цей код використовується для завантаження веб-шрифту KaushanScript.
+
+Пояснення кожної строчки:
+
+1. @font-face:
+
+Ця директива використовується для завантаження веб-шрифту.
+2. font-family:
+
+Вказує назву шрифту, який буде використовуватися. В даному випадку це KaushanScript.
+3. src:
+
+Вказує шлях до файлу шрифту.
+4. url('../fonts/kaushanscript-regular-webfont.woff'):
+
+Вказує шлях до конкретного файлу шрифту.
+5. format('woff'):
+
+Вказує формат файлу шрифту.
+Після завантаження шрифту KaushanScript ви можете використовувати його у вашому CSS-коді. */
 
 @font-face {
 	font-family: 'Roboto';
+	/* Вказує шлях до файлів шрифту */
 	src: url('../fonts/montserrat-regular-webfont.woff')format('woff'), 
 		url('../fonts/roboto-lightitalic-webfont.woff') format('woff');
 }

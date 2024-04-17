@@ -1,0 +1,155 @@
+$white_color:#FFF;
+$color_black:#000;
+$bg_color:#DADADA;
+$color-hover: blue;
+
+@import 'fonts';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: min(90%, 1200px);
+    margin: 0 auto;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+header {
+    margin-bottom: 75px;
+}
+.header_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 13px 0;
+    .header_wrap {
+        display: flex;
+        align-items: flex-start;
+        height: 22px;
+        gap: 53px;
+    }
+}
+.nav_wrap {
+    line-height: 11px;
+    ul {
+        display: flex;
+        gap: 10px;
+    }
+}
+
+.nav_wrap {
+    ul {
+        a:hover {
+            color:$color-hover;
+        }
+    }
+}
+.second_wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    .chapter {
+        display: flex;
+        flex-direction: column;
+            .text_decor {
+                text-decoration-line: underline;
+            }
+            .grey_bg {
+                background-color: $bg_color;
+            }
+        .title {
+            display: flex;
+            gap: 10px;
+        }
+        .chapter_text {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+
+        }
+    }
+}
+.pt_sans {
+    font-family: 'PT Sans', sans-serif;
+}
+.francoisn_regular {
+    font-family: 'Francois One', sans-serif;
+}
+.farro_light {
+    font-family: 'Farro', sans-serif;
+}
+.staatliches_regular {
+    font-family: 'Staatliches', sans-serif;
+}
+.tourney_semibold {
+    font-family: 'Tourney',sans-serif;
+}
+h2 {
+    @extend .francoisn_regular;
+    color: $color_black;
+    font-size: 2.25rem;
+    line-height: 3rem; 
+    letter-spacing: 0.09rem;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+p {
+    @extend .pt_sans;
+    font-style: normal;
+    font-weight: 400;
+    color: $color_black;
+    font-size: 1.75rem;
+    line-height: 48px;
+}
+sup {
+    @extend .farro_light;
+    color: $color_black;
+    line-height: normal;
+    letter-spacing: 0.075rem;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 300;
+}
+a {
+    @extend .staatliches_regular;
+    color: $color_black;
+    font-size: 1.375rem;
+    line-height: normal;
+    letter-spacing: 0.04125rem;
+    line-height: 11px;
+}
+.eng {
+    @extend .tourney_semibold;
+    background-color: $white_color;
+    text-align: center;
+    font-size: 1.375rem;
+    line-height: 11px;
+    letter-spacing: 0.0825rem;
+    &:hover {
+        color:blue;
+        cursor: pointer;
+    }
+}
+.bold {
+    @extend .pt_sans;
+    font-style: normal;
+    font-weight: 700;
+    color: $color_black;
+    font-size: 1.75rem;
+    line-height: 3rem; 
+}
+.italic {
+    @extend .pt_sans;
+    font-style: italic;
+    font-weight: 400;
+    color: $color_black;
+    font-size: 1.75rem;
+    line-height: 3rem;
+
+}

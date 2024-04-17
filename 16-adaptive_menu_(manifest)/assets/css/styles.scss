@@ -1,0 +1,543 @@
+@import '_general.scss';
+
+@import '_fonts.scss';
+
+@import 'hamburger';
+
+$lightblue: #B0E0E6;
+
+.lato {
+    font-family: 'Lato';
+}
+.red-hat-display {
+    font-family: 'Red Hat Display';
+}
+
+// === HEADER ===
+header {
+    margin-top: 1px;
+    margin-bottom: 0;
+    height: 100px;
+    background-color: white;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+        width: 142px;
+        height: 12px;
+        margin-bottom: 44px;
+        margin-top: 44px;
+        margin-left: 0;
+    }
+}
+
+.items {
+    display: flex;
+    justify-content: space-between;
+    gap: 42px;
+    a {
+        text-decoration: none;
+        color: #000;
+        @extend .lato;
+        font-size: 0.875rem;
+        font-weight: 400;
+        letter-spacing: 0.2625rem;
+        text-transform: uppercase;
+        border: 1px solid transparent;
+        border-radius: 20px;
+        padding: 5px;
+    }
+}
+
+a:hover {
+    color: black;
+    border: 1px solid $lightblue;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all .2s ease-in;
+}
+
+.search {
+    width: 18px;
+    height: 16px;
+    margin-right: 84px;
+}
+
+.hamburger-wrap {
+    // display: none;
+}
+.page-overlay {
+    // display: none;
+ }
+.menu-penal {
+    //  display: none;
+}
+.mobile-menu {
+    //  display: none;
+}
+.panel-top {
+    //  display: none;
+}
+
+
+// hamburger
+.page-overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(#000, 0.7);
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.menu-panel {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 35vh;
+    height: 100vh;
+    background-color: #F4F4F4;
+    z-index: 1001;
+    transform: translateX(-100%);
+    transition: all 0.2s ease;
+    .panel-top {
+        height: 40px;
+        display: flex;
+        padding: 20px;
+        justify-content: space-between;
+        align-items: center;
+        background-color: darken(#F4F4F4, 10%);
+    }
+    nav {
+        overflow-y: auto;
+        height: calc(100vh - 40px);
+    }
+}
+.panel-logo {
+    width: 120px;
+    height: 12px;
+    margin-bottom: 40px;
+    margin-top: 44px;
+    margin-left: 0;
+}
+.mobile-menu {
+    display: inline-block;
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 10px 20px; 
+    text-decoration: none;
+    color: #000;
+    background-color: transparent;
+    a {
+        display: inline-block;
+        width: 100%;
+        text-decoration: none;
+        color: #000;
+        @extend .lato;
+        font-size: 0.875rem;
+        font-weight: 400;
+        letter-spacing: 0.2625rem;
+        text-transform: uppercase;
+        border: 1px solid transparent;
+        border-radius: 20px;
+        padding: 5px;
+        &:hover {
+            color: #7B7B7B;
+            border: 1px solid $lightblue;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: all .2s ease-in;
+            background-color: $lightblue;
+        }
+    }
+}
+
+//  JS
+.open-mobile-menu {
+    .page-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+    .menu-panel {
+        transform: translateX(0px);
+    }
+}
+
+// --- Menu ---
+.main-menu {
+    > li {
+        position: relative;
+        > ul {
+            opacity: 0;
+            transform: translateY(30px);
+            visibility: hidden;
+            transition: all 0.2s ease;
+            position: absolute;
+            top: 24px;
+            left: 0;
+            background-color: #F4F4F4;
+            min-width: 200px;
+            > li {
+                position: relative;
+                > a {
+                    display: inline-block;
+                    width: 100%;
+                    padding: 10px;
+                    text-decoration: none;
+                    color: #000;
+                    background-color: transparent;
+                    &:hover {
+                        background-color: $lightblue;
+                        color: #7B7B7B;
+                    }
+                }
+                > ul {
+                    position: absolute;
+                    left: 100%; 
+                    top: 0;
+                    background-color: #F4F4F4;
+                    opacity: 0;
+                    transform: translateY(30px);
+                    visibility: hidden;
+                    transition: all 0.2s ease;
+                   > li {
+                    > a {
+                        display: inline-block;
+                        width: 100%;
+                        padding: 10px;
+                        text-decoration: none;
+                        color: #000;
+                        background-color: transparent;
+                        white-space: nowrap;
+                        &:hover {
+                            background-color: $lightblue;
+                            color: #7B7B7B;
+                        } 
+                    }
+
+                   }
+                }
+                &:hover {
+                    > a {
+                        background-color: $lightblue;
+                    }
+                    > ul {
+                        opacity: 1;
+                        transform: translateY(0);
+                        visibility: visible;
+                        transition: all 0.2s ease;
+                    }
+                }
+            }
+        }
+        &:hover {
+            > a {
+                background-color: $lightblue;
+                color: #7B7B7B;
+            }
+            > ul {
+                opacity: 1;
+                transform: translateY(0);
+                visibility: visible;
+            }
+        }
+    }
+}
+
+
+// === MAIN ===
+.hero-banner {
+    height: 600px; 
+}
+main p {
+    width: 770px;
+    color: #000;
+    @extend .red-hat-display;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 4rem; 
+    letter-spacing: 0.15rem;
+    position: absolute;
+    top: 200px;
+    white-space: wrap;
+}
+
+// === FOOTER === 
+footer {
+    background: #F4F4F4;
+    height: 300px;
+}
+
+.contacts {
+    margin-top: 70px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 531px;
+}
+
+.footer-contacts {
+    .text {
+        color: #000;
+        @extend .red-hat-display;
+        font-size: 2.89rem;
+        font-weight: 400;
+        line-height: 4rem;
+        letter-spacing: 0.15rem;
+        margin-bottom: 30px;
+    }
+    a {
+        color: #000;
+        @extend .lato;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 166%;
+        letter-spacing: 0.1rem;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.social-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 23px;
+    .icon {
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+        border: 1px solid #565656;
+    }
+    .white {
+        display: none;
+    }
+}
+
+.social-items a:hover {
+    .white {
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+        display: block;
+        border: 1px solid #565656;
+        background: #565656;
+    }
+    .black {
+        display: none;
+    }
+}
+
+footer p {
+    color: #000;
+    @extend .lato;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 166%;
+    letter-spacing: 0.075rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+// ------------------------------------------------------------------------
+// === АДАПТАЦІЯ ===
+@media screen and (max-width: 1024px) {
+    // Header 
+    .items {
+        gap: 8px;
+    }
+    // Main 
+    main p {
+        width: 735px;
+        font-size: 2.5rem;
+        white-space: wrap;
+    }
+    // Footer
+    footer {
+        height: 220px;
+    }
+    .footer-contacts {
+        .text {
+            font-size: 1.4rem;
+        }
+    }
+    .contacts {
+        margin-top: 35px;
+        margin-bottom: 10px;
+        gap: 220px;
+    }
+    footer p {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    // Header
+    nav {
+        display: none;
+    }
+    header {
+        width: 100%;
+        height: 60px;
+    }
+    .header-nav {
+        .logo {
+            width: 145px;
+            height: 13px;
+            margin-bottom: 23.5px;
+            margin-top: 23.5px;
+            margin-left: 0;
+        }
+    }
+    .search-icon {
+        height: 10px;
+        .search {
+            width: 20px;
+            height: 20px;
+            margin-left: 461px;
+            margin-right: 40px;
+        }
+    }
+
+    // тут буде Hamburger, але не знаю, як його сюди включити
+
+    // Main 
+    .hero-banner {
+        height: 320px; 
+    }
+    main p {
+        width: 649px;
+        font-size: 2.25rem;
+        white-space: wrap;
+        line-height: 3.125rem;
+        letter-spacing: 0.1125rem;
+        top: 100px;
+    }
+
+    // Footer
+    footer {
+        height: 410px;
+    }
+    .footer-contacts {
+        .text {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .col li {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+    }
+    .contacts {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    footer p {
+        margin-bottom: 0px;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    // Header
+    nav {
+        display: none;
+    }
+    header {
+        width: 100%;
+        height: 60px;
+    }
+    .header-nav {
+        .logo {
+            width: 145px;
+            height: 13px;
+            margin-bottom: 23.5px;
+            margin-top: 23.5px;
+            margin-left: 0;
+        }
+    }
+    .search-icon {
+        height: 20px;
+        .search {
+            width: 20px;
+            height: 20px;
+            margin-left: 81px;
+            margin-right: 20px;
+        }
+    }
+
+    // тут буде Hamburger, але не знаю, як його сюди включити
+
+    // Main 
+    .hero-banner {
+        width: 320px;
+height: 500px;
+        margin-bottom: 70px;
+    }
+    main p {
+        width: 300px;
+        height: 500px;
+        font-size: 1.85rem;
+        white-space: wrap;
+        line-height: 3.125rem;
+        letter-spacing: 0.09375rem;
+        top: 100px;
+    }
+
+    // Footer
+    footer {
+        height: 421px;
+    }
+    .footer-contacts {
+        .text {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            letter-spacing: 0.1rem;
+        }
+        .col li {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            font-size: 1.125rem;
+            line-height: 166%;
+            letter-spacing: 0.1125rem;
+        }
+    }
+    .contacts {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    footer p {
+        font-size: 1rem;
+        line-height: 166%;
+        letter-spacing: 0.1rem;
+        margin-bottom: 50px;
+    }
+}
+
+
+
+

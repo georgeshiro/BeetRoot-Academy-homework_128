@@ -1,0 +1,58 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+img {
+    vertical-align: top; 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+a, button {
+    transition: all .2s ease;
+    cursor: pointer;
+}
+
+.container {
+    width: min(90%, 1170px);
+    margin: 0 auto;
+}
+body {
+    font-family: sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: black;
+}
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+main {
+    flex-grow: 1;
+}
+
+// НЕ ЗАБУВАТИ!!! 
+// Додавати тегу <a> target="_blank" rel="noreferrer nofollow", але варто пам"ятати, що target="_blank" використовується тільки для зовнішніх посилань
+// Додавати тегу <button> атрибут type="button/reset/submit/menu"
+// Всі <button> та <input> не успадковують font-family, треба додавати примусово
+// Щоб була активна вся кнопка, а не тільки текст чи картинка, потрібно звертатися до <a>, а не до <li>
+// Додавати тегу <form> атрибут методу відправки даних method="get/post". Коли у <form> є password ЗАВЖДИ methot="post"
+// Якщо <input> знаходиться в середині <label>, то зв"язка атрибутів for та id не обов"язкова
+// <section> та <article> ЗАВЖДИ повинні мати заголовок <h1-h6>, інакше - це <div>
+// Шрифти ставимо завжди тільки в body
